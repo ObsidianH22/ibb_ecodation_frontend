@@ -1,5 +1,107 @@
+/* Project One Page
+Author : HK
+Date : 18 Haziran 2023
+Version : v.1
+*/
+
+/*######################################*/
+/* Root */
+
+
+/*######################################*/
+/* Common Properties */
+*{
+    margin:0;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+html {
+font-size: 20px;
+}
 
 
 body {
     font-family: 'Manrope', sans-serif;
+    line-height: 1.2;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;  
+}
+img:hover{
+    opacity: 0.98;
+    box-shadow: 1px 1px 4px 1 px red;
+    transition: 3s all; /* geçiş efekti : uygulanacak geçiş efekti ve efekt süresi belirtiliyor */
+    cursor: pointer; /*resmin üzerine gelindiğinde ell işareti çıkması için*/
+}
+
+i{
+    font-size: 1.5rem;
+}
+
+.my_clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* my special size */
+.fSize1{
+    font-size: 1rem;;
+}
+.fSize2{
+    font-size: 2rem;;
+}
+.fSize3{
+    font-size: 3rem;;
+}
+.fSize4{
+    font-size: 4rem;;
+}
+
+
+/*Line-clamp*/
+/*uzun veriler için sadece belirtilen kadar satır gösterir*/
+.line-clamp5{
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;  
+}
+
+.line-clamp8{
+    -webkit-line-clamp: 8; 
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;  
+}
+.line-clamp10{
+    -webkit-line-clamp: 10; 
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;  
+}
+
+/*######################################*/
+/* Header */
+
+header{
+    background-image: url(./img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: -1;
+    height: 80vh; /*görünen ekran kadar ölçüler*/
+    padding-top: 4rem ;
+
 }
