@@ -1,0 +1,63 @@
+IP nedir ? Domain nedir? 
+
+Bir internet sitesini ziyaret edebilmemiz için sunucu bilgisayarın IP adresini bilmemiz gerekir. Ip adresi ise sunucu bilgisayara atanan, 0 ile 255 arasında değişen dört ondalık sayıdan oluşan bir sistemdir.
+
+İnternet sitelerinin Ip adreslerini akılda tutmak oldukça zor olduğundan, her sitenin IP adresini temsil eden bir isimlendirme sistemi geliştirilmiştir. Buna Domain Name System denir. (DNS)
+
+Domain ifadesi bir internet sitesinin adının olduğu kısımdır ve Türkçesi alan adıdır. Yani bir internet sitesine erişmek için tarayıcıya yazılan kısma domain denilmektedir. Örneğin google.com bir alan adıdır.
+
+//////////////////////////////////////////
+
+camelCase nedir?
+
+İsimlendirme kuralları hem bireysel hem de bir ekiple yazılım geliştirenler için küçük gibi görünen ama önemli bir konudur. Bunun için belirli isimlendirme kuralları oluşturulmuştur. Namespaceler, classlar, metodlar, değişkenler ve sabitler için yazılan programlama dilinin ismilendirme kurallarını uygulamak ve mantıklı isimler vermek yazılımcılara kolaylık sağlar. Yazılım geliştirdiğimiz dilin isimlendirme kurallarını öğrenip uygulamak önemli bir detaydır.
+
+Camel case çok kullanılan isimlendirme kurallarından biridir. Kelimeler bitişik ve ilk harfleri büyük yazılır. İlk kelimenin ilk harfinin küçük yazılır.
+
+örnek : camelCase
+
+//////////////////////////////////////////
+
+PascalCase nedir ? 
+
+PascalCase, isimlendirme türü ise camel case ile aynı sayılabilir, aralarındaki tek fark camel case‘de ilk kelimenin ilk harfi küçük iken, Pascal case‘de her kelimenin ilk harfi büyük yazılır.
+
+örnek: ButtonPrimaryHover
+
+//////////////////////////////////////////
+
+CSS: box-sizing nedir? 
+
+css te varsayılan olarak "content-box" özelliği kullanılıyor. Bir elemana width ve height değerlerini verdiğimizde eğer box-sizing: content-box; özelliğine sahipse content alanın width ve height değerleri bizim verdiğimiz değerleri alırken, elemanın ekranda gözükecek genişlik ve yükseklik değerleri — varsa eğer — border ve padding değerleri eklenerek hesaplanır.
+
+Eğer box-sizing: border-box; özelliğine sahipse, elemanın ekranda görünecek olan width ve height değerleri bizim verdiğimiz width ve height değerlerini alırken, elemanın content alanı — varsa eğer — padding ve border değerleri çıkarılarak hesaplanır.
+
+Tüm elemanların box-sizing özelliğinin default değerini border-box olmasını sağlamak için şunu kullanıyoruz.
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+//////////////////////////////////////////
+
+CSS: position nedir ? 
+
+Css' de nesneleri konumlandırmak için kullandığımız yöntemlerden biri floating, bir diğeri ise position özelliğidir.
+
+bir nesneyi sayfa üzerindeki diğer nesnelerden bağımsız olarak başka bir konuma getirmek isteyebiliriz ya da bir <div> etiketini sayfanın bir konumunda sabitleyerek durmasını isteyebiliriz. Bu gibi durumlarda css position özelliğini kullanmalıyız.
+
+Css de position özelliğinin alabileceği değerler şunlardır: static (varsayılan değer) - relative - fixed - absolute - sticky 
+
+
+Html etiketleri başlangıç ayarı yani varsayılan olarak static biçimde davranış gösterirler. Yani normal akış içinde birbirlerinden etkilenerek davranış gösterirler. ** Static nesneler için top, right, bottom ve left konumlandırma özellikleri kullanılamaz.
+
+Bir nesneye position:relative; dediğimizde nesne gene normal akış içerisinde olmaya devam eder ancak top, right, bottom ve left özelliklerini kullanma fırsatı verir.
+
+Bir nesnenin position özelliğini absolute yaptığımızda o nesne normal akış içinden çıkar ayrıca 4 köşeden konumlandırma yapmamızı sağlar. Relative ile Absolute nesnelerin farkı normal akış içinde olup olmadığı farkıdır.
+
+Tarayıcının viewport' una bağlı olarak sabit bir yerde konumlanan nesneler oluşturmak istiyorsak position fixed kullanmamız gerekiyor. Tarayıcının viewport' una bağlı olarak derken kastedilen yatay ve dikey kaydırma çubuklarının kullanılmasına rağmen nesnenin konumu hep sabit kalmasındandır. Bizim için başlangıç noktası o anki viewport' dur.
+
+Position: sticky kaydırma çubuklarını takip eder ve istenilen pozisyon yakalandığında nesneyi o noktada sabitler. Örneğin bir nesne için yukarıdan 0 konumuna geldiğimiz anda nesnenin sabitlenmesini isteyebiliriz. Genelde menüler için sticky postion kullanılır.
+
