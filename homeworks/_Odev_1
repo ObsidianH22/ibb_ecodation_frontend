@@ -1,0 +1,143 @@
+Libraries ile Framework arasındaki fark nedir? 
+
+-Libraryler, yazılımcılar ve yazılım mimarlarına çalıştırılabilir programlar oluşturma aşamasında yardımcı olur. 
+-Libraryler içinde çoğunlukla önceden hazırlanmış kodlar, fonksiyon demetleri, prosedürler, yazılar, konfigürasyon verilerini içerir. 
+-Framework ise özelleştirilmiş kütüphanedir diyebiliriz. 
+-Her framework bir kütüphanedir ancak her library framework değildir. 
+-Frameworklerde bir yazılım mimarisi bulunmaktadır ve içerisinden bir fonksiyonu ya da metodu kullanırken uymanız gereken standartlar vardır. 
+
+İkisinde de başkaları tarafından oluşturulmuş kodların kullanımı söz konusudur.  Bu noktada ikisi arasında işlevsel anlamda bir fark mevcut değildir. Bu iki farklı yazılım inşası,   temel olarak bir kolaylaştırıcı kod yapısının derlemeleridir. İki farklı yapıda, ortaya çıkaracağınız ürün için bir takım kolaylıklar sağlarlar. Bir önceki cümlelerden anlayacağınız üzere, ikisi arasındaki kesinlikle amaç anlamında bir fark yok.
+
+Library ile Framework‘ün ayrıştığı nokta teknik kısımdır. İki arasındaki temel teknik fark,  kodun nasıl çağrıldığıdır. Library kullanırken, library size bazı özellikler vererek kullanmanızı sağlar, bu şekilde almış olduğunuzu kodu kendi sisteminize uygularken size kodu nerede ve ne zaman kullanacağınıza karışmaz veya bir diğer deyişle dikte etmez.  Framework ise Library'in tersine  kullanacağız özelliğe göre kodu nerede ve ne zaman kullanacağınız söyler, kullanacağız bu işlev, eğer Framework dokümanın belirtildiği gibi kullanılmaz ise kullanım dışı kalır.
+
+Özeti, siz yazmış olduğunuz kod ile  library ' i çağırırsınız, framework ise sizi çağırır. 
+
+//////////////////////////////////////////
+
+Compiler nedir ? 
+
+Derleyiciler(compiler) kaynak kodları makine koduna derleme görevine hizmet eden yazılımlardır. Bir programlama dilinin derleyicisi, o programlama dili kullanılarak yazılmış olan kodu hedef işlemci mimarisine göre uygun şekilde "makine koduna" derler ve genellikle çıktı olarak yürütülebilir dosyasının elde edilmesini sağlar.
+
+//////////////////////////////////////////
+
+Interpreter ın basitçe görevleri ve tipleri aşağıdaki şekilde listelenebilir:
+
+1. Kaynak kodu çalıştırmak
+2. Bir kaynak kodu çalıştırılabilir farklı bir kod haline tercüme etmek
+3. Daha önceden hazırlanmış olan (çoğu zaman önceden derlenmiş bir koddur) kodları yeri geldiğinde çalıştırmak
+
+Basitçe, bir kaynak kodu hedef koda çevirdikten sonra çalıştıran ve dolayısıyla koddaki hataları yakalama işlemini ve kodun iyileştirilmesini daha kod çalıştırmadan yapan çeviricilere derleyici, kodu satır satır veya bloklar halinde çalıştırıp sırası gelmeyen satırları hiç çalıştırmayan bu satırlardaki hataları hiçbir zaman göremeyen ve kodun bütününe ait iyileştirmeleri yapamayan çeviricilere de yorumlayıcı (interpreter) adı verilmektedir.
+
+
+Compiler, C, C++, C#, Scala, TypeScript gibi dillerde kullanılırken, Interpreter PHP, Perl, Ruby, Python gibi dillerde çalıştırılır.
+
+//////////////////////////////////////////
+
+ASCII
+
+1960’lı yılların ilk yarısına kadar her bilgisayar üreticisi, sayılarla karakterlerin eşleştirildiği, birbirinden çok farklı tablolar kullanıyordu. Yani her bilgisayar üreticisi farklı karakterleri farklı sayılarla eşleştiriyordu. Örneğin bir bilgisayarda 10 sayısı ‘a’ harfine karşılık geliyorsa, başka bir bilgisayarda 10 sayısı ‘b’ harfine karşılık gelebiliyordu. Bu durumun doğal sonucu olarak, iki bilgisayar arasında güvenilir bir veri aktarımı gerçekleştirmek mümkün olmuyordu. Hatta daha da vahimi, aynı firma içinde bile birden fazla karakter eşleştirme tablosunun kullanıldığı olabiliyordu…
+
+1960’lı yılların başında IBM şirketinde çalışan Bob Bemer adlı bir bilim adamı bu kargaşanın sona ermesi gerektiğine karar verip, herkes tarafından benimsenecek ortak bir karakter kodlama sistemi üzerinde ilk çalışmaları başlattı. İşte ASCII (‘aski’ okunur) böylece hayatımıza girmiş oldu.
+
+Bob Bemer ve ekibi hangi sayıların hangi karakterlere karşılık geleceğini belli bir standarda bağlayan bir tablo oluşturdu. Bu standarda ise American Standard Code for Information Interchange, yani ‘Bilgi Alışverişi için Standart Amerikan Kodu’ veya kısaca ‘ASCII’ adı verildi.
+
+ASCII adı verilen sistem, birtakım sayıların birtakım karakterlerle eşleştirildiği basit bir tablodan ibarettir.
+
+ASCII tablosunda toplam 128 karakterin sayılarla eşleştirilmiş durumda olduğunu görüyoruz. 128 adet sayı 7 bite karşılık gelir (2⁷=128). Yani 7 bit ile gösterilebilecek son sayı 127‘dir. Dolayısıyla ASCII 7 bitlik bir sistemdir.
+
+‘Genişletilmiş ASCII’, standart ASCII gibi genel kabul görmüş tek bir sistem değildir. Genişletilmiş ASCII dediğimizde zaten tek bir karakter kümesi akla gelmiyor. Dolayısıyla ASCII dendiğinde anlamamız gereken şey 128 karakterlik bir sayı-karakter eşleştirme tablosudur. ASCII hiçbir zaman bu 128 karakterin ötesine geçip de 256 karakterlik bir aralığı temsil etmiş değildir. Dolayısıyla 127. sayının ötesindeki karakterleri kapsayan sistem ASCII değildir. ‘Genişletilmiş ASCII’ kavramı, temel ASCII sisteminde temsil edilen sayı-karakter çiftlerinin pek çok farklı kurum ve kuruluş tarafından birbirinden farklı biçimlerde ‘genişletilmesiyle’ oluşturulmuş, ancak ASCII’nin kendisi kadar standartlaşamamış bir sistemler bütünüdür. 
+
+//////////////////////////////////////////
+
+Unicode nedir?
+
+Unicode dünyadaki tüm karakterleri temsil etmek için dizayn edilmiş evrensel bir platform . bu nedenle hemen hemen 143,859 farklı karakteri barındırmaktadır.
+
+ascii ile arasındaki en büyük fark şudur: asciide her bir karakterin binary karşılığı belli iken yani kaç byte yada bit kullanılacağı, bu standartta ise belli değildir. bunun için utf-8, utf-16 gibi encoding standartları ortaya çıkmıştır.
+sadece her bir karakterin hexadecimal kodları mevcuttur.
+
+ayrıca unicode ascii nin tüm karakterlerini ve karşılıklarınıda içine alır.
+“A” karakterini hex karşılığı ASCII de U+0041 olduğu gibi unicode ‘da aynıdır.
+
+//////////////////////////////////////////
+
+Semantik (diğer bir ifade ile anlamsal) elementler, geliştirici ve tarayıcıyı için anlamlı bir karşılığı olan HTML etiketlerini ifade etmekte.  Html5 ile gelen html5 anlamsal etiketler yani semantic etiketleri kullanmamız arama motorları açısından büyük önem taşımaktadır. Çünkü oluşturduğumuz içerikleri html semantik etiketler içinde sunuyor olmamız sitemizi indekslemeye gelen arama motorlarına içerik ile alakalı daha anlamsal bilgi sunduğumuzdan dolayı ziyaretçi sayımızı olumlu etkileyecektir.
+
+<header>
+<nav>
+<section>
+<article>
+<aside>
+<figure>
+<figcaption>
+<footer>
+<details>
+<summary>
+<mark>
+<time>
+
+Non Semantik elementlerin herhangi bir anlamı yoktur. İçerdikleri şeyler hakkında bir şey belirtmezler. div span non semantic elementlerden bazılarıdır. 
+
+//////////////////////////////////////////
+
+Form Yapısındaki GET ve POST nedir ?
+
+GET methodu kullanıldığında istekler URL kısmında gönderilir. Gönderilen bilgiler URL’de görüntülendiği için güvenlik riski yüksektir ancak POST metoduna göre daha hızlıdır.
+
+POST metodu ise URL’de görüntülenmesi istemediğimiz istekler için kullanılır. Gönderilen bilgiler URL’de görünmediği için daha güvenlidir ancak GET methoduna göre daha yavaştır. Yani POST metodunda form alanları HTTP REQUEST HEADER içinde kodlanmış olarak gider, URL’de gözükmez. POST işleminde her türlü dosyayı post edebiliriz: XML,Image, File post edebiliriz.
+
+GET ile veri göndermede karakter limiti varken POST’ta böyle bir limit yoktur. Karakter limiti GET metodunda 2048 karakterdir.
+
+GET’in POST’a karşı bir diğer dezavantajı şudur: multi-part binary türündeki verilerin gönderimi. “multi-part binary” ile kastedilen şey dosyadır. Örneğin; resimdir. POST ile forma bir resim koyup sunucuya upload edebiliriz. Fakat GET ile bu mümkün değildir.
+
+//////////////////////////////////////////
+
+Ajax nedir?
+
+“AJAX Nedir?” AJAX, Asynchronous JavaScript and XML, Türkçe olarak Eşzamansız ve XML’in kısaltılmışıdır. Sunucuya gelen herhangi bir isteği arkaplanda işleyerek web uygulamalarının eşzamanlı olmadan çalışmasına olanak sağlayan bir takım web geliştirme teknikleridir.
+
+Hem JavaScript, hem de XML AJAX’da eşzamanlı olmadan çalışır. Sonuç olarak, AJAX kullanan herhangi bir web uygulaması tüm sayfayı yenileme ihtiyacı olmadan veri yollayabilir ve alabilir.
+
+Google’un otomatik tamamlama özelliğini düşünün. Siz anahtar kelimelerinizi yazarken o size onları tamamlamanıza yardım eder. Sayfa aynı kalırken anahtar kelimeler gerçek zamanlı olarak değişir. 90’ların başlarında, internet şimdiki kadar gelişmediği zamanlarda aynı özellik Google’ın ekranınızda her yeni bir öneri çıktığında sayfanızı yeniden başlatmasını gerektirirdi. 
+
+AJAX veri değişimi ve sunuş katmanının birbirlerinin fonksiyonlarına karışmadan aynı anda çalışmalarına olanak sağlar.
+
+AJAX konsepti 90’ların ortalarından beri var olan bir konsepttir. Ancak, Google bu konsepti 2004’de Google Mail ve Google Maps’de kullanmaya başladığından beri daha geniş bir şekilde tanınmaya başladı. Bugünlerde çeşitli web uygulamalarında sunucu iletişim işlemini düzene koymak için yaygın bir biçimde kullanılmaktadır.
+
+AJAX’ın ne tek bir teknoloji, ne de bir program dili değildir. Daha önce de belirttiğimiz gibi, AJAX bir takım web geliştirme tekniğidir.
+
+//////////////////////////////////////////
+
+CDN nedir? 
+
+CDN (Content Delivery Network), bir web sitesinin içeriğini en düşük ağ ve işlem gecikmesi ile yani en hızlı bir şekilde kullanıcılara ulaştırmak üzere coğrafi olarak farklı bölgelerde konumlandırılmış sunucu kümesine verilen isimdir.
+
+Birçok e-ticaret ve haber sitesi sayfa açılma süresini düşük tutabilmek için CDN kullanmaktadır. CDN üzerinden kullanıcıdan kullanıcıya genelde pek değişmeyen HTML, JS, CSS, imaj, video ve font dosyaları sunulur. CDN bu tip kaynakları origin olarak adlandırdığı asıl sunucudan (örn: milliyet․com․tr) çekerek belirli bir süre için cache’ler. Bu noktadan sonra CDN’e ilgili kaynaklar için kullanıcıların yaptığı istekler cache’lenen bu kopyadan sağlanır. Cache süresi dolduğunda origin’e yeniden yapılan isteklerle kaynaklar tazelenir.
+
+//////////////////////////////////////////
+
+Integrity Nedir ? 
+
+Subresource Integrity (SRI), 23 Haziran 2016’da World Wide Web Consortium (W3C) tarafından bir W3C tavsiyesi olarak duyurulmuştu.
+
+SRI, web uygulama geliştiricilerine, Content Delivery Networks (CDN) gibi üçüncü parti servislerde barındırılan kaynakların herhangi bir beklenmeyen modifikasyon olmadan dağıtıldığını garanti altına alma fırsatı sunan bir metottur.
+
+W3C, kaynakların üçüncü parti bir servisten yüklenmesi halinde uygulanacak en iyi pratik olarak SRI’yı tavsiye etmektedir.
+
+
+Integrity (bütünlük) HTML özniteliğinin formatı şöyledir:
+
+integrity=”[hash algoritması]-[base64 ile encode edilmiş kriptolu hash değeri]
+Hash algoritması olarak sha256, sha384 ya da sha512 kullanılabilir. Bu sebeple SRI kontrollerini aktif etmek için aşağıdaki örnekte gösterildiği gibi Integrity HTML özniteliğini script etiketine eklemelisiniz:
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha384-R4/ztc4ZlRqWjqIuvf6RX5yb/v90qNGx6fS48N0tRxiGkqveZETq72KgDVJCp2TC" crossorigin="anonymous"></script>
+
+Webin gelişmesiyle birlikte bir HTML sayfasına yüklenen kaynaklar çoğaldı. Özellikle tekrar eden ihtiyaçlar için zaman geçtikçe en verimli çözümler üretilmeye ve kullanılmaya başlandı. Bu çözümlerin kullanılması yaygınlaştıkça belli riskler de ortaya çıkmaya başladı. Örnek olarak HTML sayfamıza ekleyeceğimiz bir dış script bir güvenlik açığıyla karşı karşıya kaldığında o scripti kullanan bütün sayfalar aynı anda etkilenmiş olacak. Bunun bir örneği yakın zamanda birçok firmayı etkileyen Gigya servisinde olmuştu. Bu servisi kullanan sitelerin sayfalarına ekledikleri harici bir gigya servisi bir saldırıya maruz kalmıştı ve o servisi kullanan binlerce sitede bu açıktan etkilenmişti. İşte CDN dediğimiz bu gibi hazır scriptleri eklediğimiz durumlarda bir doğrulama yöntemine ihtiyaç duyuyoruz. Yani browser bir şekilde, sayfamızı etkileyecek kodların bizim istediğimiz eklediğimiz kodlar olduğunu doğrulaması gerekiyor. Bu noktada da integrity özelliği devreye giriyor. Sayfamızda kullanacağımız hazır kodların bir imzasını bu özelliğe değer olarak ekliyoruz. Bu imza doğrudan kodun kendisinden oluşturulur ve belli bir karakter uzunluğundadır. Ayrıca kodda bir harf bile değişecek olsa imza tutmayacaktır. Bu sayede eğer kodda zararlı/zararsız herhangi bir değişiklik olursa browser imzalar uyuşmayacağı için kodları sayfamıza yüklemeyecektir.
+
+//////////////////////////////////////////
+
+Cross-origin nedir ? 
+
+Browserlar, istek sahteciliği gibi güvenlik sorunlarıyla aktif şekilde mücadele etmeye çalışıyor. Bu yüzden bir kaynaktaki dökümanın bir diğer kaynaktaki (farklı domain) dökümanlara erişmesinde biraz hassas davranıyorlar. Bu konuya cross origin resource sharing deniyor kısaca CORS diyebiliriz. İşte bu etiketimiz de farklı kaynaklardaki, farklı domainlerdeki scriptleri yüklememiz için bize yardımcı oluyor. Eğer bir kaynaktan(aynı domain dahil) bir şey yüklemek için belli bilgileri( Çerezlerimiz olabilir, HTTP basit giriş bilgileri olabilir) göndermemiz gerekiyorsa bu özelliğin değerini crossorigin = "use-credentials" olarak belirlemeliyiz. Eğer anonim şekilde erişmemiz gerekiyorsa yani herhangi bir bilgiye ihtiyaç yoksa crossorigin="anonymous" olarak kullanacağız.
+
+
