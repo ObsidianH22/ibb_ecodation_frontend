@@ -24,6 +24,12 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    
+    
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
   <!-- external css -->
   <link rel="stylesheet" href="style.css" />
@@ -51,30 +57,79 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              <i class="fa-regular fa-user text-primary" ></i>
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginId" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Register</a></li>
               <li>
-                <hr class="dropdown-divider">
+                  <hr class="dropdown-divider">
               </li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          </ul>
           </li>
+         
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <button class="btn btn-primary" onclick="darkModu()"><i class="fa-solid fa-moon"></i></button>
           </li>
         </ul>
+
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Ara..." aria-label="Search">
+          <input id="tags" class="form-control me-2" type="search" placeholder="Ara..." aria-label="Search">
           <button class="btn btn-primary" type="submit">Ara</button>
         </form>
+
+
       </div>
     </div>
   </nav>
 
   <!-- end nav -->
+
+<!-- Modal Body -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="loginId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+aria-labelledby="modalTitleId" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Register</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                    <input type="text" id="form5Example1" class="form-control" />
+                    <label class="form-label" for="form5Example1">Name</label>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="form5Example2" class="form-control" />
+                    <label class="form-label" for="form5Example2">Email address</label>
+                </div>
+
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+                    <label class="form-check-label" for="form5Example3">
+                        I have read and agree to the terms
+                    </label>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Subscribe</button>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+        </div>
+    </div>
+</div>
+</div>
 
   <!-- start header -->
   <header id="header_id">
@@ -92,23 +147,36 @@
 
   <!-- start main -->
   <main id="main_id">
-
+    <section>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis explicabo at, vitae autem hic, ea aliquam perferendis cupiditate laboriosam fugiat delectus quia a magnam et eveniet, voluptas aspernatur. Ad, quas?
+      Quaerat expedita facilis praesentium sint est, fugiat laboriosam. Ratione error itaque omnis deleniti deserunt, quas quisquam. Beatae, accusamus harum, voluptate ex hic laboriosam, sequi est minus consequuntur culpa ab ad!
+      Sint reiciendis nulla dolor distinctio sit ullam perspiciatis, rerum doloribus aut, perferendis, possimus iure fuga nobis! Culpa, eum reprehenderit, eligendi ad nobis velit omnis ea commodi vel, tempora unde nemo.
+      Rerum dolorum dicta doloribus sequi iste accusantium recusandae perferendis qui vitae. Veniam natus quod illum tempore non vel doloribus earum. At qui repudiandae accusantium quasi optio? Culpa itaque placeat minima.
+      Repellendus quidem sit quis, eveniet sed natus culpa, reiciendis alias placeat assumenda hic quasi. Perferendis aliquam, cum praesentium quos odio vitae quod magnam quaerat itaque pariatur vero! Harum, obcaecati sit!
+      Deserunt repudiandae quia culpa quasi nesciunt tempore consequuntur iure distinctio soluta eum explicabo quaerat unde nemo natus nihil est nisi dolores, eveniet corrupti similique, porro voluptas assumenda. Eaque, ex necessitatibus!
+      Dicta rerum fugiat ab praesentium illo fuga consequuntur, accusamus labore quisquam mollitia quaerat asperiores error, corporis amet a similique dignissimos alias eligendi, iure esse nobis aut. Nemo magni consectetur optio?
+      Cumque assumenda odit dolore enim quos iste facilis sapiente sunt officiis nesciunt exercitationem iusto, maxime at obcaecati fugiat dolores est! Ut, praesentium qui. Porro dicta id beatae sequi expedita eius.</p>
+  </section>
 
   </main>
   <!-- end main -->
 
   <!-- start footer -->
-  <footer id="footer_id">
-
-
-  </footer>
+  <footer id="footer_id" class="bg-dark">
+    <div class="text-center p-5" id="copy_right">2021- <span id="date_id"></span>  &copy; Bütün Haklar saklıdır</div>
+</footer>
   <!-- end footer -->
+
+<a href="#navbar_id" id="back_top" class="btn btn-primary">
+  <i class="fas fa-arrow-up"></i>
+</a>
 
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">

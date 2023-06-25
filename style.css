@@ -7,6 +7,9 @@ Version : v.1
 /*######################################*/
 /* Root */
 
+:root{
+    --templeteBgColor:rgb(43,43,43);
+}
 
 /*######################################*/
 /* Common Properties */
@@ -93,15 +96,41 @@ i{
     overflow: hidden;  
 }
 
+/* Navbar */
+
+.dark_mode{
+    background-color: var(--templeteBgColor);
+    color: #fff;
+    
+}
+
+
 /*######################################*/
 /* Header */
 
 header{
     background-image: url(./img/header.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 50% 50%;
-    z-index: -1;
     height: 80vh; /*görünen ekran kadar ölçüler*/
     padding-top: 4rem ;
+}
 
+/* Footer */
+footer{
+    min-height: 10rem;
+    width: auto;
+    color:white;
+}
+
+/* Back Top */
+#back_top{
+    position: fixed;
+    right:0;
+    bottom:0;
+}
+
+#back_top:hover{
+    opacity: 0.8;
 }

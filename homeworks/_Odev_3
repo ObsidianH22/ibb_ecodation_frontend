@@ -1,0 +1,11 @@
+ÖDEV 3
+
+Javascript DOM nedir? 
+
+JQuery'de DOM nasıl çalışıyor? (nasıl çağırıyoruz)
+
+let newDate()=()=>{ 
+const date=new Date().getFullYear();
+$("#date_id").html(date)
+}
+newDate()
