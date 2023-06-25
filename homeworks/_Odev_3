@@ -1,11 +1,33 @@
-ÖDEV 3
-
 Javascript DOM nedir? 
 
-JQuery'de DOM nasıl çalışıyor? (nasıl çağırıyoruz)
 
-let newDate()=()=>{ 
-const date=new Date().getFullYear();
-$("#date_id").html(date)
-}
-newDate()
+DOM (Document Object Module) HTML dökümanları içerisinde bulunan nesnelere kolaylıkla erişim sağlamak ve üzerinde işlemler yapabilmek için tasarlanan bir modeldir ve W3C (World Wide Web Consortium) standartıdır. DOM ile HTML dosyamızda bulunan her şeye erişim sağlayabiliriz.
+
+HTML dosyasında bulunan bütün öğeler, DOM üzerinde bir nesne olarak görülür. DOM modelin ismi, document ise bu nesnelerin kapsayıcısıdır. Bu kapsayıcı içerisinde bulunan <html> etiketi head, body nesnelerinin içerisinde bulunan diğer nesnelerin kapsayıcısıdır. Head ve body etiketleri de içerisinde bulunan diğer nesnelerin kapsayıcılarıdır. Aynı örüntü üzerinde bu durum tekrar eder.
+
+//////////////////////////////////////////
+
+JQuery'de DOM nasıl çalışıyor? 
+
+jQuery'nin en önemli özelliklerinden biri, DOM (Document Object Model) elemanlarını işleyebilme yeteneğidir.
+
+Biz jQuery kütüphanesi yardımı ile istediğimiz bir elementin child’larına erişebiliriz. Aşağıdaki kod ile parent id’li elementin bütün childrenları &kids isimli değişkene atanmıştır.
+
+const $kids = $('#parent').children();
+
+
+Üç adet metot sayesinde jQuery, DOM elemanlarını manipüle edebilir:
+
+text() – seçilen elemanların metin içeriklerine atama yapar veya onlara erişerek işlem yapar.
+html() – HTML işaretçileri de dâhil, seçilen elemanların içeriğini atar ya da onlara erişir.
+val() – Form alanlarının değerine erişir veya onlara atama yapar.
+
+$("#btn1").click(function(){
+  $("#test1").text("GUZEL YURDUM");
+});
+$("#btn2").click(function(){
+  $("#test2").html("<b>GUZEL YURDUM</b>");
+});
+$("#btn3").click(function(){
+  $("#test3").val("HEY KOCA YURT");
+});
