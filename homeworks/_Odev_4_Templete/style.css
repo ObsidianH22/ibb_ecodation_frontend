@@ -1,6 +1,6 @@
 /* Project One Page
 Author : HK
-Date : 18 Haziran 2023
+Date : 2 Temmuz 2023
 Version : v.1
 */
 
@@ -16,14 +16,12 @@ Version : v.1
 *{
     margin:0;
     padding: 0px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 
 html {
 font-size: 20px;
 }
-
 
 body {
     font-family: 'Manrope', sans-serif;
@@ -122,10 +120,16 @@ i{
 
 /* Navbar */
 
+#navbar_id{
+    font-size: 0.8rem;
+}
 .dark_mode{
     background-color: var(--templeteBgColor);
     color: #fff;
-    
+}
+
+#navbar-left{
+    font-size: 0.5rem;
 }
 
 
@@ -133,50 +137,62 @@ i{
 /* Header */
 
 header{
-    background-image: url(./img/header.jpg);
+    background-image: url('./img/bg-3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     height: 80vh; /*görünen ekran kadar ölçüler*/
     padding-top: 4rem ;
+
 }
 
-/* Messages */
-#messages{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+/* About Us / Hakkımızda */
+.aboutBox{
+
+    background-color: black;
+    opacity: 0.6;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 2px 4px 15px white; 
+
 }
 
-#messages > .container > .row > .text-center > p {
+#aboutUs{
+    background-color: transparent;
+    background-image: url(img/bg-4.jpg);
+    background-size: cover;
+    height: auto;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+}
+
+#aboutUs > h2, p{
+    color: white !important;
+}
+
+/* Our Works / Çalışmalarımız  */
+#ourWorks{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #E9ECEF;
+}
+
+#ourWorks > .container > .row > .text-center > p {
     color: black !important;
 }
 
-#messages i{
+#ourWorks i{
     color: blue;
     font-size: 5rem ;
 }
 
-/* Parallax */ 
-
-#parallax{
-    background-color: transparent;
-    background-image: url(img/parallax-bg.webp);
-    background-size: cover;
-    height: 40rem;
-    padding: 2rem;
-    background-repeat: no-repeat;
-    background-attachment: fixed !important;
-
-}
-
-#parallax > h2, p{
-    color: white !important;
-}
 
 /* Newspaper */
 #newspaper {
-    height: 35rem;
-    padding: 2rem;
+    height: auto;
+    padding: 3rem;
+    background-color: #c8cbdb;
 }
 
 #newspaper p{
@@ -187,13 +203,25 @@ header{
 /* Blog */
 
 #blog {
-    background-color: aliceblue;
+    background-color: #a0a8b9;
+    padding: 3rem;
+}
+
+#contact {
+    padding: 3rem;
+    height: auto;
+    background-color:	#c8cbdb;
+
+}
+
+.contact-form{
+    font-size: small;
 }
 
 
 /* Footer */
 footer{
-    min-height: 10rem;
+    min-height: auto;
     width: auto;
     color:white;
 }
@@ -203,6 +231,7 @@ footer{
     position: fixed;
     right:0;
     bottom:0;
+   margin: 1rem;
 }
 
 #back_top:hover{
