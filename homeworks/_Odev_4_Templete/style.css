@@ -237,3 +237,12 @@ footer{
 #back_top:hover{
     opacity: 0.8;
 }
+
+
+/* Pages H1 */
+
+#pagesH1{
+    text-align: center;
+    color:red;
+    
+}
