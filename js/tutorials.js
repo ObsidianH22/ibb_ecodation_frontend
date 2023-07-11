@@ -91,3 +91,10 @@ console.log(job);
 //Boolean("") //false
 //Boolean(null) //false
 //Boolean(undefined) //false
+
+
+//undefined : değer verilmemiş değişkenler
+//Nan : Not a Number 
+//isNaN : sonuc false ise sayıdır
+//infinity : tanımsızlık. bir sayının sıfıra bölünmesi gibi. 
+
