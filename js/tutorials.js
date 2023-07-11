@@ -202,3 +202,32 @@ console.log(str.substring(0,4)); //
 // S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
 // S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
 
+//FUNCTION (Normal)
+//1 returnsuzParametresiz
+function returnsuzParametresiz(){
+    console.log("deneme");
+}
+returnsuzParametresiz()
+
+//2 returnsuzParametreli
+function returnsuzParametreli(adi){ //parametre
+    console.log("deneme" + adi);
+}
+returnsuzParametreli("HamitM") //argüman
+
+//3 returnluParametresiz
+function returnluParametresiz(){
+    return "deneme";
+}
+let result3 = returnluParametresiz();
+console.log(result3);
+
+//4 returnluParametreli
+function returnluParametreli(soyadi){
+    return "deneme66" + soyadi;
+}
+let result4 = returnluParametreli("Mızrak");
+console.log(result4);
+
+//return süz fonksiyonları direk console.log ile çağırabiliyoruz. returnlü olanları ise bir değişkene atarak çağırabiliyoruz. 
+
