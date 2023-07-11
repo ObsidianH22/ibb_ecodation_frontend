@@ -1,0 +1,7 @@
+Asenkron ve Senkron Fonksiyon Nedir?
+
+Senkron dediğimiz kavram şudur: Kodlar yukarıdan aşağıya doğru sırayla işlenir ve bir satırdaki işlem bitmeden diğer satıra geçilmez. Asenkron yapıda ise uzun zaman alan veya farklı görevdeki işlemler aynı anda gerçekleştirilir.
+
+Javascript single-thread ve asenkron yapıda çalışan bir programlama dilir. Aslında bu konu uzun uzun anlatılması gereken bir konu fakat kısaca şu şekilde açıklama yapalım. Javascript single-thread çalıştırma yaptığı için çalıştırdığı eventleri ve callback leri sıraya sokarak hepsini tek bir thread ile işler. Bahsedilen Event’lerin ve Callback’lerin sırada tutulduğu yapı, basit bir kuyruk (Queue) mekanizmasıdır. Thread’in her defasında kuyruktaki ilk Event’i işleyip yeni bir Event alması da Event Loop olarak adlandırılır. Javascript Run-to-Completion adı verilen, elindeki işi tamamlamadan başka bir işe geçmeyen bir mekanizmaya sahiptir.
+
+Kaynak :https://medium.com/@anlayan/asenkron-ve-senkron-fonksiyon-nedir-javascriptte-async-ve-await-nas%C4%B1l-kullan%C4%B1l%C4%B1r-460613abed8a
