@@ -98,3 +98,61 @@ console.log(job);
 //isNaN : sonuc false ise sayıdır
 //infinity : tanımsızlık. bir sayının sıfıra bölünmesi gibi. 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//MATH FUNCTIONS
+
+/*
+console.log(Math.PI);
+console.log(Math.E);
+console.log(Math.min(4,1,99,555,25,-100));
+console.log(Math.max(4,1,99,555,25,-100));
+
+console.log(Math.sqrt(16));
+console.log(Math.abs(-25));
+console.log(Math.pow(2,5));
+
+console.log(Math.floor(3.9));
+console.log(Math.ceil(3.9));
+console.log(Math.round(6.5));
+console.log(Math.round(6.4));
+
+console.log(Math.sin(45));
+console.log(Math.round(Math.random()*9+1));
+
+*/
+
+//javascripte bilimsel gösterim. 2023000 sayısının farklı bilimsel yazış şekilleri:
+
+/*
+var sayi1=2023000;
+var sayi2=2023E3; 
+var sayi3=20230E2;
+var sayi4=2.023E6;
+var sayi5=20.23E5;
+var sayi5=202.3E4;
+var sayi6=202.3E+4;  //+ işareti konularak da yazılır. aynı sonucu verir. 
+var sayi7=0.2023E+7;
+var sayi8=0.02023E+8;
+
+console.log(sayi1+" sayi 1");
+console.log(sayi2+" sayi 2");
+console.log(sayi3+" sayi 3");
+console.log(sayi4+" sayi 4");
+console.log(sayi5+" sayi 5");
+console.log(sayi6+" sayi 6");
+console.log(sayi7+" sayi 7");
+console.log(sayi8+" sayi 8");
+
+*/
+
+
+//ODEV : NUmber ile parseInt arasındaki fark nedir?
+
+/*
+console.log(Number("10")+10);
+console.log(parseInt("10")+10);
+
+*/
+
+//ODEV : String() ile .toString arasındaki fark nedir?
