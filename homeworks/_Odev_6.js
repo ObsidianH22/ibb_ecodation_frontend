@@ -25,3 +25,4 @@ else {
 // Örnek-5 : kullanıcı tarafından girilen bir sayıyı negatif mi pozitif mi olduğu ekran yazdıran algoritma ?
 //NOT: cast kullalım ?
 
+// Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım. eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
