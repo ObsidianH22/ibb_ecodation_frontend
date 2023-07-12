@@ -246,5 +246,3 @@ let anonymous=function(){}
 //ARROW FUNCTION
 
 let arrow = () => {}
-
-

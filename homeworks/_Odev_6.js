@@ -20,9 +20,26 @@ else {
     console.log(Math.min(1,5)+5)
 }
 
-//////////////////////
-
 // Örnek-5 : kullanıcı tarafından girilen bir sayıyı negatif mi pozitif mi olduğu ekran yazdıran algoritma ?
 //NOT: cast kullalım ?
 
+let number=Number(prompt("negatif ya da pozitif bir sayı giriniz..."));
+
+if (number>0){
+    console.log("pozitif sayı girdiniz...")
+}
+else 
+console.log("negatif bir sayı girdiniz...")
+
+
 // Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım. eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
+
+
+let password=prompt("lütfen bir şifre belirleyiniz...");
+let repassword=prompt("lütfen şifrenizi tekrar giriniz...");
+
+if (password==repassword){
+    console.log("aynı veri");
+}
+else console.log("birbirine uymadı");
+
