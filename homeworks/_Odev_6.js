@@ -35,8 +35,8 @@ console.log("negatif bir sayı girdiniz...")
 // Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım. eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
 
 
-let password=prompt("lütfen bir şifre belirleyiniz...");
-let repassword=prompt("lütfen şifrenizi tekrar giriniz...");
+let password=prompt("Lütfen bir şifre belirleyiniz...");
+let repassword=prompt("Lütfen şifrenizi tekrar giriniz...");
 
 if (password==repassword){
     console.log("aynı veri");
