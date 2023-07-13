@@ -241,8 +241,20 @@ console.log(result4);
 
 //ANONYMOUS FUNCTION
 
-let anonymous=function(){}
+//let anonymous=function(){}
 
 //ARROW FUNCTION
 
-let arrow = () => {}
+//let arrow = () => {}
+
+////////////////////////////////////////////////////////////
+
+//CONDITION : IF - ELSE - ELSE IF - SWITCH CASE 
+/*
+const condi=()=> {
+    let number=4;
+    console.log((number>=2) ? "Büyüktür" : "Küçüktür");
+}
+condi()
+*/
+
