@@ -257,4 +257,3 @@ const condi=()=> {
 }
 condi()
 */
-
