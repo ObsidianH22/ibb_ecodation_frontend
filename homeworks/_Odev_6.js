@@ -42,4 +42,3 @@ if (password==repassword){
     console.log("aynı veri");
 }
 else console.log("birbirine uymadı");
-
