@@ -257,3 +257,32 @@ const condi=()=> {
 }
 condi()
 */
+
+//LOOPS : for - for each - while - do while 
+
+let loop=()=> {
+    for (let i=1; i<=10; i++) {
+        document.write(i+ " ")
+    }
+}
+loop();
+
+let loop2=()=> {
+    let i=1;
+    while ( i<=10) {
+        document.write(i+ " ")
+        i++
+    }
+}
+loop2();
+
+let loop3 = () => {
+    let i=1;
+    do {
+        document.write(i+" ")
+        i++
+    }
+    while (i<=10);
+}
+
+loop3();
