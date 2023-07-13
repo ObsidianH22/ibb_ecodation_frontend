@@ -246,3 +246,8 @@ let anonymous=function(){}
 //ARROW FUNCTION
 
 let arrow = () => {}
+
+let test=null
+
+console.log(String(test));
+console.log(test.toString);

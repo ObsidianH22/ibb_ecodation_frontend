@@ -1,0 +1,66 @@
+Binary nedir?
+
+Binary (İkili) Sayı Sistemi , Gottfried Leibniz tarafından rafine edilen ve yalnızca iki sayıdan ( 0 ve 1 ) oluşan bir sayı sistemidir.
+
+Bu sayı sistemi, bilgisayar işlemci talimatları gibi verileri yazmak için kullanılan tüm ikili kodların temelidir.
+
+Binary (İkili) Sayı sisteminin tabanı 2’ dir. Ve bu sistemde sadece “0” ve “1” rakamları kullanılmaktadır. Binary (ikili) Sayı sisteminde bulunan her ‘0’ veya ‘1’ rakamları BIT (Binary Digit) adı ile tanımlanır. Decimal (onlu) sayıları, sadece iki rakamdan oluşan Binary (ikili) sayılarla tanımlayabilmemiz, sayısal sistemlerin iki voltaj seviyesini kullanarak farklı büyüklüklerin tanımlanmasının anlaşılmasını sağlamaktadır.
+
+Binary Sayı Sistemi Boole cebrine dayanan lojik verilerin temsili ve lojik işlemlerin gerçekleştirilmesi için en uygun olan sayı sistemidir.
+
+Çoğu fiziki olaylar ikili sistem için çok müsaittir. Mesela gerilim var/yok, ışık var/yok, kontak açık/kapalı, magnetlenme var/yok vs.
+
+Bilgisayarlarda veri ile ilgili bellekteki adresi belirtmek için kullanılır.
+
+Komut kodu olarak kullanılır.
+
+Bilgisayarlarda dahili ve harici olarak bulunan devrelerin durumlarını belirlemek için bir sayı grubu olarak kullanılır.
+
+Aritmetik işlemlerin basit ve hızlı bir şekilde gerçekleştirilmesini sağlar.
+
+İkili sayı sisteminin bazı dezavantajları da şöyledir:
+
+a) İnsanlar ikili sayı sistemini kullanmaya pek alışık değillerdir.
+
+b) Onlu sayı sistemine göre çok uzun rakamlar yazmak gerekir.
+
+Octal nedir? 
+
+binary (ikili) sayılarla işlem yapmak zahmetli bir işlem olduğundan farklı sayı sistemlerinin kullanımı tasarımcılar arasında yaygınlaşmıştır. Kullanılan bu sayı sistemlerinden Sekizli (oktal) Sayı sisteminin tabanı sekiz olup 0, 1, 2, 3, 4, 5, 6, 7 rakamları bu sayı sisteminde kullanılır.
+
+İşlemci yalnız ikili sistemi anladığı, kullanıcı ise 10` lu sisteme alıştığı için 60′ lı yıllara kadar bilgisayarla kullanıcı arasında iletişim zorluğu vardı. Bu zorluklar özellikle bilgisayara adres bilgisi aktarmak, bilgisayardan adres bilgisi almak, registerlerin durumlarını izleyerek gereken ayarlamaları yapmak, belleğin içeriğini kontrol etmek ve gereken değişiklikleri yapmak, işlemciye hemen kullanılacak veriyi aktarmak vs. gibi problemlerin çözümü sırasında yoğun olarak karşıya çıkmaktaydı. Bu problemi hafifletmek amacı ile 2’ li sistemden daha anlaşılır, bilgisayar için ise ikili sistem kadar anlaşılabilen bir aralık sayı sisteminin olması gerekirdi. Böyle bir sistem olarak 8’ li sayı sistemi seçilmişti. 
+
+Decimal nedir?  
+
+Decimal (onlu) Sayı sistemi günlük hayatta kullandığımız 0 1 2 3 4 5 6 7 8 9 rakamlarından oluşur. Decimal (onlu) Sayı sisteminde her sayı bulunduğu basamağa göre değer alır. Sistemin tabanı 10’ dur.
+
+Hexadecimal nedir? 
+
+1960‘ larda Latin alfabesinin ve noktalama, kontrol, matematik vs. işaretlerin genel amaçlı bilgisayarların alfabesine girmesiyle; bilgi ölçme ve temsil birimi olarak byte (8 basamaklı ikili kod) kabul edilmiştir. Bundan sonra 8 / 3 = 2,66 tamsayı olmadığı için 8′ li sayıların bellekte yerleştirilmesi ve incelenmesi zorlaşmış, buna karşılık olarak  iki rakamı tam bir byte’ da yerleşen 16’ lı sistem alternatifsiz bir aralık sistem olarak kullanılmaya başlamıştır. Bundan başka, 10’ lu (BCD) sayıların da her bir rakamının temsil edilebilmesi için 4 bit gerekir. Böylece 16’ lı ve 10’ lu sayıların bellekte yerleştirilmesi yöntemi ve araçları, bunlar üzerinde yapılan birçok işlemler ve bunları gerçekleştiren program ve donanım araçları, büyük bir ölçüde her iki sayı sistemi için de ortak olur. 16 = 24 olduğu için 16’ lı ve ikili sistemler birbirine direkt olarak çevrilebilir.
+Hexadecimal (Onaltılı) Sayı sisteminin tabanı 16 olup, 0 – 9′ a kadar rakamlar ve A – F’ ye kadar harfler bu sayı sisteminde tanımlıdır. Bu sayı sisteminde rakamlar bu sembollerin yan yana yazılmasından elde edilir. Hanelerin basamak ağırlıkları sağdan sola doğru 16′ nın artan kuvvetleri ile belirtilir.
+
+
+Number() ile parseInt() arasındaki fark nedir?
+
+İçerisinde hem sayı hem de harf bulunan "123hk" şeklindeki bir değişkeni Number() ile dönüştürmeye çalıştırdığımızda NaN (not a number) çıktısı dönecektir. 
+
+Aynı değişkeni parseInt ile dönüştürmeye çalıştığımızda 123 çıktısı döndürecektir.  
+
+Örnek : 
+
+let test="123hk"
+
+console.log(Number(test));
+console.log(parseInt(test));
+
+
+String() ile .toString() arasındaki fark nedir
+
+Bir değişkenin değeri null ya da undefined olarak tanımlı ise bu değişkeni String ile dönüştürebiliriz ama dönüşüm işlemini toString() ile yapmaya kalkarsak hata TypeError hatası fırlatacaktır. 
+
+Örnek: 
+
+let test=null
+
+console.log(String(test));
+console.log(test.toString);
