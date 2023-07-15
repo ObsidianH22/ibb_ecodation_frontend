@@ -319,6 +319,7 @@ trycathc()
 
 //1 ile 10 dahil olmak üzere toplama işlemi yapan js algoritmayı yazınız
 
+/*
 const debugData=()=> {
     let sum=0;
     for (let i=1; i<10; i++){
@@ -328,6 +329,7 @@ const debugData=()=> {
 }
 
 debugData()
+*/
 
 //Ödev : 
 
@@ -341,6 +343,49 @@ debugData()
 // secret-Key kullanıcı eğer 44 girerse hiç bir işlem yapmadan sistemden çıkış sağlansın onunda haricinde sürekli işlem yapsın
 // Dikkat: Bu algoritmayı Arrow Function ile yapalım.
 // (Clean code kuralları çercevesinde ) algoritma yapan JS program?
+
+/*
+let sumAll=()=> {
+    let userData=prompt("Lütfen bir sayı giriniz...");
+ 
+    let sum=0; 
+    let evenCount=0, evenSum=0, evenNumbers="";let oddCount=0, oddSum=0, oddNumbers="";
+
+    for(let i=1; i<=userData; i++){
+        if(i==44){
+            return
+        }
+        if (i==7){
+            continue;
+        }
+        if(i==50){
+            break;
+        }
+        if(i%2==0){
+            evenCount+=1;
+            evenSum+=i; 
+            evenNumbers= evenNumbers + " " + i;  
+        }
+        else{
+            oddCount+=1;
+            oddSum+=i; 
+            oddNumbers= oddNumbers + " " + i; 
+        }
+        sum+=i;
+    }
+    console.log("Toplam : "+sum);
+
+    console.log("Tek sayılar: " + oddNumbers);
+    console.log("Tek sayı adedi: " + oddCount);
+    console.log("Tek sayı toplam: " + oddSum);
+
+    console.log("Çift sayılar: " + evenNumbers);
+    console.log("Çift sayı adedi: " + evenCount);
+    console.log("Çift sayı toplam: " + evenSum);
+}
+sumAll()
+
+*/
 
 // RETURN BREAK CONTINUE
 
