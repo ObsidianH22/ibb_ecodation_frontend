@@ -260,6 +260,8 @@ condi()
 
 //LOOPS : for - for each - while - do while 
 
+/*
+
 let loop=()=> {
     for (let i=1; i<=10; i++) {
         document.write(i+ " ")
@@ -286,3 +288,46 @@ let loop3 = () => {
 }
 
 loop3();
+
+*/
+
+// TRY - CATCH
+
+/*
+let trycathc = () => {
+    try {
+        alertx("pop-up");
+    }
+   catch(error) {
+    console.log("hata mesajı: "+error.message);
+    console.log("hata mesajı: " + error.name);
+    console.error(error);
+   }
+   finally{
+    console.log("db.close");
+    console.log("port.close");
+   }
+    console.log("son satır");
+}
+
+trycathc()
+
+*/
+
+
+// DEBUG : Hata ayıklama 
+
+//1 ile 10 dahil olmak üzere toplama işlemi yapan js algoritmayı yazınız
+
+const debugData=()=> {
+    let sum=0;
+    for (let i=1; i<10; i++){
+        sum=sum+i;
+    }
+    console.log("toplam : " + sum)
+}
+
+debugData()
+
+// RETURN BREAK CONTINUE
+
