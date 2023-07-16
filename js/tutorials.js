@@ -474,6 +474,8 @@ masking();
 
 // Monad : bir fonksiyonun çıktısı başka bir fonksiyonun girdisi ise buna MONAD deniliyor... 
 
+/*
+
 const birinci = ()=>{
     let user=Number(prompt("Lütfen sayı giriniz... "));
     return user;
@@ -486,3 +488,23 @@ console.log(Math.sqrt(data));
 }
 
 ikinci();
+
+*/
+
+// setTimeOut(), setInterval()
+
+/*
+
+//belirli zaman sonra tek bir kere çalışır ve durur
+setTimeout (function () {
+console.log("setTimeout çalıştı.");
+}
+, 2000);
+
+
+//belirli zaman sonra çalışır ve sonsuza kadar kapanıp tekrar çalışır 
+setInterval (function(){
+    console.log("setInterval çalıştı ")
+},1000) ;
+
+*/
