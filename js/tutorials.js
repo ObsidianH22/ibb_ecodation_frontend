@@ -511,6 +511,8 @@ setInterval (function(){
 
 //callBackFunction : fonksiyonu geri çağırmak
 
+//coklu işlemler için kullanılıyor. daha iyi versiyonu olarak "promise" var. o daha sık kullanılıyor
+
 /*
 const birinci=(data)=> {
     return Math.pow(data,2);
@@ -524,3 +526,23 @@ const ikinci=(callBackFunction)=> {
 ikinci(birinci);
 
 */
+
+//promise
+
+const promTutorials=()=>{
+    //catch 1 tane olmak zorunda
+    let data = new Promise((resolve,reject)=>{
+        let status = 200;
+        if(status===200)
+        resolve("çalıştı");
+        else
+        reject("çalışmadı");
+    }).
+    then(
+        ()=>{console.log("olumlu"); }
+        ).
+    catch(
+        (err)=>{console.error(err); }
+        );
+}
+promTutorials();
