@@ -437,7 +437,6 @@ console.log(result);
 // H**** MIZ***
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
-
 /*
 
 //aşağıdaki maskeleme kodu tekrarlı harfler içeren durumlarda hata veriyor. 
@@ -471,4 +470,19 @@ masking();
 
 */
 
+///////////////////////////////////////////////
 
+// Monad : bir fonksiyonun çıktısı başka bir fonksiyonun girdisi ise buna MONAD deniliyor... 
+
+const birinci = ()=>{
+    let user=Number(prompt("Lütfen sayı giriniz... "));
+    return user;
+
+}
+
+const ikinci = ()=> {
+let data=birinci();
+console.log(Math.sqrt(data));
+}
+
+ikinci();
