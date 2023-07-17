@@ -528,7 +528,7 @@ ikinci(birinci);
 */
 
 //promise
-
+/*
 const promTutorials=()=>{
     //catch 1 tane olmak zorunda
     let data = new Promise((resolve,reject)=>{
@@ -546,3 +546,44 @@ const promTutorials=()=>{
         );
 }
 promTutorials();
+*/
+
+// dizi : elimizdeki verileri düzenli şekilde saklamaya yarar
+let arr=()=>{
+    const numbers=[3,4,5,"str, true"];
+    return numbers;
+}
+let arrResult=()=>{
+    let data=arr();
+    console.log(data);
+    console.log(data[0]);
+    console.log(data[4]);
+    console.log(data[data.length-1]);
+
+    //iterative for loop
+    for(let i=0;i<data.length;i++) {
+        document.write(data[i]+" ")
+    }
+
+    document.write("<br/>");
+    //for in  : index numaralarıyla veriyi getirecek
+    for(let temp in data){
+        document.write(temp+" => "+data[temp]+"<br/>");
+    }
+
+    document.write("<br/>");
+    //for of : sadece elemanları getirecek.
+    for(let temp of data){
+        document.write(temp+" ");
+    }
+
+    
+}
+
+arrResult();
+//araştırma ödevi : FIFO(First In First Out) Nedir , LIFO (Last In First Out) Nedir ?
+
+//dizilerde lifo mantığı kullanılıyormuş ? teyit et !
+
+
+
