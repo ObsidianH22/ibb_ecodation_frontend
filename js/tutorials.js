@@ -566,12 +566,14 @@ let arrResult=()=>{
     }
 
     document.write("<br/>");
+
     //for in  : index numaralarıyla veriyi getirecek
     for(let temp in data){
         document.write(temp+" => "+data[temp]+"<br/>");
     }
 
     document.write("<br/>");
+    
     //for of : sadece elemanları getirecek.
     for(let temp of data){
         document.write(temp+" ");
@@ -581,7 +583,7 @@ let arrResult=()=>{
 
     //foreach
     //forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
-    data.forEach(function(value, index,array){
+    data.forEach((value, index,array)=>{
        // document.write(index+" => "+value+"<br/>");
         document.write(`${index} => ${value} <br>`);
     });
@@ -590,7 +592,7 @@ let arrResult=()=>{
 arrResult();
 //araştırma ödevi : FIFO(First In First Out) Nedir , LIFO (Last In First Out) Nedir ?
 
-//dizilerde lifo mantığı kullanılıyormuş ? teyit et !
+
 
 
 
