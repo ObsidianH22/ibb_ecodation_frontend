@@ -577,7 +577,9 @@ let arrResult=()=>{
         document.write(temp+" ");
     }
 
-    
+    //foreach
+    //forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
+    data.forEach();
 }
 
 arrResult();
