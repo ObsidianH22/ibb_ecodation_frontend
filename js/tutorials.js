@@ -593,13 +593,27 @@ let arrResult=()=>{
     document.write("<br/>");
 
     // filter  :
-     
+
     //filter<S extends T>(predicate: (value: T, index: number, array: T[]) => value is S, thisArg?: any): S[];
 
    let result1= data.filter((value, index,array)=>{
     return value%2==0
 
    }).forEach((value, index,array)=>{
+     document.write(`${index} => ${value} <br>`);
+ });
+
+ document.write("<br/>");
+
+
+ // map  :
+
+ //map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[];
+
+ data.map((value, index, array) => {
+    return value += 10
+
+ }).forEach((value, index, array) => {
      document.write(`${index} => ${value} <br>`);
  });
 
