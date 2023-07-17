@@ -550,7 +550,7 @@ promTutorials();
 
 // dizi : elimizdeki verileri düzenli şekilde saklamaya yarar
 let arr=()=>{
-    const numbers=[3,4,5,"str, true"];
+    const numbers=[3,4,5,"str", 66];
     return numbers;
 }
 let arrResult=()=>{
@@ -559,7 +559,7 @@ let arrResult=()=>{
     console.log(data[0]);
     console.log(data[4]);
     console.log(data[data.length-1]);
-
+/*
     //iterative for loop
     for(let i=0;i<data.length;i++) {
         document.write(data[i]+" ")
@@ -581,17 +581,33 @@ let arrResult=()=>{
 
     document.write("<br/>");
 
+    */
+
     //foreach
     //forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
     data.forEach((value, index,array)=>{
        // document.write(index+" => "+value+"<br/>");
         document.write(`${index} => ${value} <br>`);
     });
+
+    document.write("<br/>");
+
+    // filter  :
+     
+    //filter<S extends T>(predicate: (value: T, index: number, array: T[]) => value is S, thisArg?: any): S[];
+
+   let result1= data.filter((value, index,array)=>{
+    return value%2==0
+
+   }).forEach((value, index,array)=>{
+     document.write(`${index} => ${value} <br>`);
+ });
+
 }
 
 arrResult();
-//araştırma ödevi : FIFO(First In First Out) Nedir , LIFO (Last In First Out) Nedir ?
 
+//araştırma ödevi : FIFO(First In First Out) Nedir , LIFO (Last In First Out) Nedir ?
 
 
 
