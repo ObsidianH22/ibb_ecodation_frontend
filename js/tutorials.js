@@ -673,7 +673,24 @@ let arrayResult = () => {
    data2.shift();
    console.log("shift uygulandı :  " + data2);
 
+// SORT : küçükten büyüğe verileri sıralar . (ilk rakamı baz alıyor...)
+
+    data2.sort();
+    console.log("sort uygulandı : " + data2);
+
+// REVERSE : verileri sondan başa doğru sıralar 
+
+    data2.reverse();
+    console.log("reverse uygulandı : " + data2);
+// sondan başa ters sıralama için : 
+
+    data2.sort().reverse();
+    console.log("ters sıralama yapıldı : " + data2);
+
+//
+
 
 }
+
 
 arrayResult();
