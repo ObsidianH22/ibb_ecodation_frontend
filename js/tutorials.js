@@ -687,9 +687,11 @@ let arrayResult = () => {
     data2.sort().reverse();
     console.log("ters sıralama yapıldı : " + data2);
 
-// toString : 
+// toString : dizinin tüm elemanlarını stringe çevirmek
 
     console.log("toString uygulandı : " + data2.toString().substring(0,20));
+
+// SPLICE , SLICE , ilerde 
 
 }
 
