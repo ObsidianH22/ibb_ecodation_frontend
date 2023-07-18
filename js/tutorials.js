@@ -657,6 +657,12 @@ let arrayResult = () => {
     data2.push(99); 
     console.log(data2);
 
+
+// UNSHIFT : veriyi dizinin başına ekler
+
+    data2.unshift("hk"); 
+    console.log(data2);
+
 }
 
 arrayResult();
