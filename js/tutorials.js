@@ -590,7 +590,7 @@ let arrResult=()=>{
         document.write(`${index} => ${value} <br>`);
     });
 
-    document.write("<br/>");
+  //  document.write("<br/>");
 
     // filter  :
 
@@ -603,7 +603,7 @@ let arrResult=()=>{
      document.write(`${index} => ${value} <br>`);
  });
 
- document.write("<br/>");
+ //document.write("<br/>");
 
 
  // map  :
@@ -619,10 +619,44 @@ let arrResult=()=>{
 
 }
 
-arrResult();
+//arrResult();
 
 //araştırma ödevi : FIFO(First In First Out) Nedir , LIFO (Last In First Out) Nedir ?
 
+// ÖDEV
+/*
+ Örnek
+1.YOL normal diziyle yapalım
+rastgele 10 elemanlı bir dizi  oluşturalım.
+bu sayılardan tek olanları bulalım.
+bu tek sayıların sonuna 5 ekleyelim
+buradaki sayıları ekranda gösterelim. ?
+bu şarta uyan kaç tane sayı vardır ?
 
+ 2.YOL map,filter, forEach ile yapalım.
+ rastgele 10 elemanlı bir dizi  oluşturalım.  ==> (random)
+ bu sayılardan tek olanları bulalım.          ==> (filter)
+ bu tek sayıların sonuna 5 ekleyelim          ==> (map)
+ buradaki sayıları ekranda gösterelim. ?      ==> (forEach)
+ bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
+ 2.YOL map,filter,counter
 
+*/
 
+// PUSH : veriyi dizinin sonuna  ekler
+
+let array=()=>{
+    const numbers=[3,44,10,"str", 77];
+    return numbers;
+}
+let arrayResult = () => {
+    let data2=array();
+
+    document.writeln("Eleman sayısı : " + data2.length);
+
+    data2.push(99); 
+    console.log(data2);
+
+}
+
+arrayResult();
