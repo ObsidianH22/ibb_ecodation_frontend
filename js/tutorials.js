@@ -643,7 +643,6 @@ bu şarta uyan kaç tane sayı vardır ?
 
 */
 
-// PUSH : veriyi dizinin sonuna  ekler
 
 let array=()=>{
     const numbers=[3,44,10,"str", 77];
@@ -654,14 +653,26 @@ let arrayResult = () => {
 
     document.writeln("Eleman sayısı : " + data2.length);
 
+// PUSH : veriyi dizinin sonuna  ekler
+
     data2.push(99); 
-    console.log(data2);
+    console.log("push uygulandı : " + data2);
 
 
 // UNSHIFT : veriyi dizinin başına ekler
 
     data2.unshift("hk"); 
-    console.log(data2);
+    console.log("unshift uygulandı : " + data2);
+
+// POP : dizinin sonundaki veriyi siler
+
+    data2.pop();
+    console.log("pop uygulandı : " + data2);
+
+// SHIFT : dizinin başındaki veriyi siler
+   data2.shift();
+   console.log("shift uygulandı :  " + data2);
+
 
 }
 
