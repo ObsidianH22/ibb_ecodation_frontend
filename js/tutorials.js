@@ -687,10 +687,10 @@ let arrayResult = () => {
     data2.sort().reverse();
     console.log("ters sıralama yapıldı : " + data2);
 
-//
+// toString : 
 
+    console.log("toString uygulandı : " + data2.toString().substring(0,20));
 
 }
-
 
 arrayResult();
