@@ -696,3 +696,19 @@ let arrayResult = () => {
 }
 
 //arrayResult();
+
+
+//callback - promise orneği 
+
+let callbackFunctionComputer=()=>{
+
+    //dizi objesi içinde 5 tane random obje oluşturalım
+    const computerArray=[];
+
+    for(let i=0; i<5; i++) {
+        let computerObject= {computerName:"callback computer" +(i+1),price: (i+1)*100}
+        computerArray.push(computerObject);
+    }
+    console.log(computerArray);
+} 
+callbackFunctionComputer();
