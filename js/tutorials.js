@@ -772,3 +772,5 @@ let promiseFunctionComputer=()=>{
     .catch((err)=>{console.log(err);});
 } 
 promiseFunctionComputer();
+
+//ÖDEV : clean kod kapsamında tekrar eden kısımlar düzenlenecek .
