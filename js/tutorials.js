@@ -697,32 +697,78 @@ let arrayResult = () => {
 
 //arrayResult();
 
+/*
 
-//callback - promise orneği 
+//callback orneği 
 
 let callbackFunctionComputer=()=>{
 
     //dizi objesi içinde 5 tane random obje oluşturalım
     const computerArray=[];
-
     for(let i=0; i<5; i++) {
         let computerObject= 
-        {computerName:`callback computer ${(i+1) }`,
-        price: `${i+1}`*`${Number(100)}`
-    }
+        {
+            computerName:`callback computer ${i+1 }`,
+            price: `${i + 1}`*`${Number(100)}`
+        }
         computerArray.push(computerObject);
     }
     console.log(computerArray);
 
     // bu dizi içindeki sadece computer Name bileşenlerini gösterin (Map)
-
-    const arrayComputerName=()=>{
+    const arrayInComputerName=()=>{
         computerArray.map((temp)=>{
-console.log(`${temp.computerName}`);
+        console.log(`${temp.computerName}`);
         })
     }
-    arrayComputerName();
+    arrayInComputerName();
 
-    
+    //call back function Price
+    const arrayInComputerObject=(obj, callBackFnc)=>{
+    computerArray.push(obj);
+    callBackFnc();
+    }
+    arrayInComputerObject({computerName:"computer 6 ", price:600},arrayInComputerObject)
 } 
 callbackFunctionComputer();
+
+*/
+
+
+//promise orneği 
+
+let promiseFunctionComputer=()=>{
+
+    //dizi objesi içinde 5 tane random obje oluşturalım
+    const computerArray=[];
+    for(let i=0; i<5; i++) {
+        let computerObject= 
+        {
+            computerName:`callback computer ${i+1 }`,
+            price: `${i + 1}`*`${Number(100)}`
+        }
+        computerArray.push(computerObject);
+    }
+    console.log(computerArray);
+
+    // bu dizi içindeki sadece computer Name bileşenlerini gösterin (Map)
+    const arrayInComputerName=()=>{
+        computerArray.map((temp)=>{
+        console.log(`${temp.computerName}`);
+        })
+    }
+    arrayInComputerName();
+
+    // promise function 
+    const arrayInComputerObject=(obj)=>{
+        const promiseReturn = new Promise(()=>{
+            computerArray.push(obj);
+        })
+    return promiseReturn;
+
+    }
+    arrayInComputerObject({computerName:"computer 6 ", price:600})
+    .then(()=>{})
+    .catch((err)=>{console.log(err);});
+} 
+promiseFunctionComputer();
