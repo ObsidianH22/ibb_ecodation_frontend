@@ -706,7 +706,10 @@ let callbackFunctionComputer=()=>{
     const computerArray=[];
 
     for(let i=0; i<5; i++) {
-        let computerObject= {computerName:"callback computer" +(i+1),price: (i+1)*100}
+        let computerObject= 
+        {computerName:`callback computer ${(i+1) }`,
+        price: `${i+1}`*`${Number(100)}`
+    }
         computerArray.push(computerObject);
     }
     console.log(computerArray);
