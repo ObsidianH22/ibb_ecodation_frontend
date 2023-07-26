@@ -713,5 +713,16 @@ let callbackFunctionComputer=()=>{
         computerArray.push(computerObject);
     }
     console.log(computerArray);
+
+    // bu dizi içindeki sadece computer Name bileşenlerini gösterin (Map)
+
+    const arrayComputerName=()=>{
+        computerArray.map((temp)=>{
+console.log(`${temp.computerName}`);
+        })
+    }
+    arrayComputerName();
+
+    
 } 
 callbackFunctionComputer();
