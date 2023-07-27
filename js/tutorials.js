@@ -735,7 +735,7 @@ callbackFunctionComputer();
 */
 
 
-//promise orneği 
+// promise orneği 
 
 let promiseFunctionComputer=()=>{
 
@@ -771,6 +771,62 @@ let promiseFunctionComputer=()=>{
     .then(()=>{})
     .catch((err)=>{console.log(err);});
 } 
-promiseFunctionComputer();
+//promiseFunctionComputer();
 
-//ÖDEV : clean kod kapsamında tekrar eden kısımlar düzenlenecek .
+//ÖDEV : clean kod kapsamında tekrar eden kısımlar düzenlenecek.
+
+
+//OBJECT YAPISI
+
+let objectTutorials =() => {
+const personObj = {
+    "name" : "Hamit",
+    "surname" : "Mızrak",
+    "number" : 44,
+    "isLogin" : true,
+    //object içinde dizi
+    "software" : ["Html5", "Css3", "Js"],
+    //object içinde fonksiyon 
+    fulllName:function() {
+        return this.name + " " + this.surname;
+    }
+};
+
+console.log(personObj);
+
+// variable yapısı
+console.log(personObj.name);
+console.log(personObj.surname);
+
+// variable nested
+console.log(personObj["name"]);
+console.log(personObj["surname"]);
+
+// Array 
+console.log(personObj.software[0]);
+
+// Object turundeki veriyi stringe çevirdik. 
+const objectToString=JSON.stringify(personObj);
+console.log(objectToString);
+
+// String türündeki veriyi Object veri türüne çevirdik
+const stringToObject=JSON.parse(objectToString);
+console.group(stringToObject.name);
+
+// Object Variable : Var olan obje nize yeni bir özellik eklemek 
+personObj.language = "english";
+console.log(personObj.language);
+
+//function callback. object verisi içindeki fonksiyonu çağırıyoruz: 
+console.log(personObj.fulllName());
+
+}
+
+objectTutorials()
+
+
+//ÖDEV : json Nedir , XML Nedir ? arasındaki fark Nedir 
+
+
+
+
