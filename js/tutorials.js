@@ -822,10 +822,23 @@ console.log(personObj.fulllName());
 
 }
 
-objectTutorials()
+// objectTutorials()
 
 
 //ÖDEV : json Nedir , XML Nedir ? arasındaki fark Nedir 
+
+// OBJECT CONSTRUCTOR : Kurucu Metotlar
+
+let objectConstructor = () => {
+let personConstructor=function(name, surname){
+    this.name=name;
+    this.surname = surname;
+    console.log(this);
+}
+let personResult = new personConstructor("Hamit", "Mızrak");
+console.log(personResult.name);
+}
+objectConstructor()
 
 
 
