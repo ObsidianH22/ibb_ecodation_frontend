@@ -838,7 +838,46 @@ let personConstructor=function(name, surname){
 let personResult = new personConstructor("Hamit", "Mızrak");
 console.log(personResult.name);
 }
-objectConstructor()
+// objectConstructor()
+
+
+// call apply bind 
+let noParameterCallApplyBind = () => {
+
+    let functionOtherObject = function () {
+        document.writeln(`Parametresiz Function : ${this.adi}<br/>` )
+    };
+    let objectData={
+        "adi": "Spora Gidiyorum"
+    };
+
+    functionOtherObject.call(objectData);
+    functionOtherObject.apply(objectData);
+    let deneme =  functionOtherObject.bind(objectData);
+   deneme();
+
+}
+noParameterCallApplyBind();
+document.writeln(`<br/>`)
+
+///////////////////
+
+let ParameterCallApplyBind=()=>{
+
+    let functionOtherObject =function(surname){
+        document.writeln(`Parametreli Function : ${this.adi}=> ${ surname } <br/>` )
+    };
+    let objectData={
+        "adi": "Spora Gidiyorum",
+    };
+
+    functionOtherObject.call(objectData, "Mızrak");
+    functionOtherObject.apply(objectData, ["Mızrak"]);
+    let deneme =  functionOtherObject.bind(objectData, "Mızrak");
+   deneme();
+
+}
+ParameterCallApplyBind();
 
 
 
