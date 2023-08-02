@@ -857,8 +857,8 @@ let noParameterCallApplyBind = () => {
    deneme();
 
 }
-noParameterCallApplyBind();
-document.writeln(`<br/>`)
+//noParameterCallApplyBind();
+//document.writeln(`<br/>`)
 
 ///////////////////
 
@@ -877,8 +877,8 @@ let ParameterCallApplyBind=()=>{
    deneme();
 
 }
-ParameterCallApplyBind();
+//ParameterCallApplyBind();
 
-
+///////////////////
 
 
