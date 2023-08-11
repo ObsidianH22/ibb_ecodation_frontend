@@ -881,4 +881,8 @@ let ParameterCallApplyBind=()=>{
 
 ///////////////////
 
+// event
 
+let eventFunction=()=> {
+    alert("deneme")
+}
