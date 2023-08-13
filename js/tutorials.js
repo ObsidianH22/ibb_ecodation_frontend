@@ -886,3 +886,17 @@ let ParameterCallApplyBind=()=>{
 let eventFunction=()=> {
     alert("deneme")
 }
+
+
+// dom  : document object manipulation 
+
+let newDataDate = ()=> {
+   let now = document.getElementById("text_data")
+   now.innerHTML=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
+
+   //text datası gerekirse düz metin şu şekilde kullanıyoruz : 
+  // now.innerText=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
+
+  // now.innerText=`${new Date().getFullYear()}`;
+
+}
