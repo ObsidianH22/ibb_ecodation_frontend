@@ -891,20 +891,20 @@ let eventFunction=()=> {
 // dom  : document object manipulation 
 
 let newDataDate = ()=> {
-   //let now = document.getElementById("text_data");
+    //let now = document.getElementById("text_data");
 
     // QUERY SELECTOR
     let now = document.querySelector("#text_data")
 
-   //HTML 
-   //now.innerHTML=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
+    //HTML 
+    //now.innerHTML=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
 
-   //TEXT : text datası gerekirse düz metin şu şekilde kullanıyoruz : 
-  // now.innerText=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
+    //TEXT : text datası gerekirse düz metin şu şekilde kullanıyoruz : 
+    // now.innerText=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
 
-   now.innerText=`${new Date().getFullYear()}`;
+    now.innerText=`${new Date().getFullYear()}`;
 
-  // CSS 
+    // CSS 
   now.style.color="yellow";
   now.style.backgroundColor="black";
   now.style.padding="5rem";
@@ -934,5 +934,8 @@ let domData2 = () => {
     //let domUserData=document.getElementsByTagName("p")[1].innerText="tag Data ";
 }
 
+// ALIŞTIRMA : Kullanıcı butona tıkladığında kullanıcıya soru sorsun. Farklı bir sayfaya gitmek ister misiniz  ? Evet se farklı bir sayfaya redirect , değilse alert versin 
 
-
+let outSite = ()=> {
+    let userInformation=window.confirm("farklı bir sayfaya gitmek ister misiniz") ? window.location=("https://www.ecodation.com") : window.alert("bu sayfada kalındı.");
+}
