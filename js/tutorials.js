@@ -909,5 +909,19 @@ let newDataText =()=> {
 }
 
 
+// DOM : detay 
+
+let domData2 = () => {
+
+    // ID 
+    //let domUserData=document.getElementById("dom_id").innerText="Id ye göre...";  
+
+    // Class
+    //let domUserData=document.getElementsByClassName("class-data")[0].innerText="class Data";
+
+    // Tag Name
+    //let domUserData=document.getElementsByTagName("p")[1].innerText="tag Data ";
+}
+
 
 
