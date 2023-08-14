@@ -900,3 +900,14 @@ let newDataDate = ()=> {
   // now.innerText=`${new Date().getFullYear()}`;
 
 }
+
+// örnek : paragraf_id2 adında bir paragraf olsun. bu paragrafa kullanıcı mouse ile tıkladığında aşağıda zspan id="special_id"></span> içine tıklandı veya paragraf üstüne gelindi yazsın. 
+
+let newDataText =()=> {
+    let now = document.getElementById("text_data2")
+    now.innerHTML=`<b><i><mark> ${"paragraf üzerine gelindi"}  </mark></i></b>`;
+}
+
+
+
+
