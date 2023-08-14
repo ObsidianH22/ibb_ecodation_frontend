@@ -939,3 +939,17 @@ let domData2 = () => {
 let outSite = ()=> {
     let userInformation=window.confirm("farklı bir sayfaya gitmek ister misiniz") ? window.location=("https://www.ecodation.com") : window.alert("bu sayfada kalındı.");
 }
+
+// Listener 
+
+let userListener =()=> {
+    let listenerParag=document.getElementById("parag_list");
+    listenerParag.addEventListener("click", function(e){
+     //alert(e.preventDefault+ " "+ e.target)  ; 
+     document.getElementById("log_admin").innerHTML="takip edildi / okundu";
+    });
+}
+
+userListener()
+
+ 
