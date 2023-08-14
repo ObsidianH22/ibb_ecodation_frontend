@@ -891,7 +891,10 @@ let eventFunction=()=> {
 // dom  : document object manipulation 
 
 let newDataDate = ()=> {
-   let now = document.getElementById("text_data");
+   //let now = document.getElementById("text_data");
+
+    // QUERY SELECTOR
+    let now = document.querySelector("#text_data")
 
    //HTML 
    //now.innerHTML=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
@@ -906,6 +909,7 @@ let newDataDate = ()=> {
   now.style.backgroundColor="black";
   now.style.padding="5rem";
 
+  
 }
 
 // örnek : paragraf_id2 adında bir paragraf olsun. bu paragrafa kullanıcı mouse ile tıkladığında aşağıda zspan id="special_id"></span> içine tıklandı veya paragraf üstüne gelindi yazsın. 
