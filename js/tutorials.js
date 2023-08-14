@@ -891,13 +891,20 @@ let eventFunction=()=> {
 // dom  : document object manipulation 
 
 let newDataDate = ()=> {
-   let now = document.getElementById("text_data")
-   now.innerHTML=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
+   let now = document.getElementById("text_data");
 
-   //text datası gerekirse düz metin şu şekilde kullanıyoruz : 
+   //HTML 
+   //now.innerHTML=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
+
+   //TEXT : text datası gerekirse düz metin şu şekilde kullanıyoruz : 
   // now.innerText=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
 
-  // now.innerText=`${new Date().getFullYear()}`;
+   now.innerText=`${new Date().getFullYear()}`;
+
+  // CSS 
+  now.style.color="yellow";
+  now.style.backgroundColor="black";
+  now.style.padding="5rem";
 
 }
 
