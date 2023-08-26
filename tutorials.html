@@ -48,6 +48,8 @@
 
   <hr>
   <hr>
+
+  <!--
   <p id="parag_list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veritatis unde minus aspernatur
     adipisci veniam voluptatem pariatur cumque tempore ab repellendus, deleniti similique, dolores voluptas impedit
     necessitatibus modi voluptate autem?
@@ -57,7 +59,26 @@
     Cumque iste placeat, saepe reprehenderit porro deserunt adipisci rerum consequuntur. Dicta assumenda praesentium
     quisquam nobis! Molestiae quasi enim aut eos expedita eius laborum, asperiores saepe sed eaque eum laboriosam
     incidunt?</p>
-  Log Information: <span id="log_admin"></span>  
+  Log Information: <span id="log_admin"></span> 
+
+-->
+
+
+  <div id="clickme">
+    Click here
+  </div>
+  <img id="book" src="./img/header.jpg" alt="" width="100" height="123">
+
+<script>
+  // With the element initially shown, we can hide it slowly:
+$( "#clickme" ).on( "click", function() {
+  $( "#book" ).hide( "slow", function() {
+    alert( "Animation complete." );
+  });
+});
+</script>
+
+
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
