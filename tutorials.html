@@ -67,7 +67,7 @@
 
 <p>Hello</p>
 <a href="#">Click to hide me too</a>
-<p>Here is another paragraph</p>
+<p>Here is another paragraph</p><br>
  
 
 <script>
@@ -77,6 +77,26 @@
     $( this ).hide();
   });
   </script>
+
+<hr>
+
+
+<!-- JQuery other example -->
+<p>paragraf 2</p>
+<span>data-1</span><br>
+<span>data-2</span><br>
+<span>data-3</span><br>
+
+
+<script>
+  $( "span" ).on( "click", function( event ) {
+    event.preventDefault();
+    $( "span" ).hide();
+  });
+  </script>
+
+<hr>
+
 
 <!-- JQuery other example -->
   <div id="clickme">
