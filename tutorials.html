@@ -113,6 +113,24 @@ $( "#clickme" ).on( "click", function() {
 });
 </script>
 
+<hr>
+<!-- JQuery other example -->
+
+<p id="parag-1">paragraf 1</p>
+<a>data-1</a><br>
+<a>data-2</a><br>
+<a>data-3</a><br>
+
+<script>
+  $( "a" ).on( "click", function( event ) {
+    event.preventDefault();
+    $( this ).hide();
+    $("#parag-1")
+    .html("<br>parag-1 </br>")
+    .css("color", "orange")
+    .css("backgroundColor", "black");
+  });
+  </script>
 
 
   <!-- Bootstrap JavaScript Libraries -->
