@@ -975,7 +975,11 @@ let localStorageData=()=>{
    console.log(localStorage);
 
    const getAdi=localStorage.getItem("name");
-   alert(getAdi);
+   //alert(getAdi);
+   
+   const getSoyadi=localStorage.getItem("surname");
+   //alert(getSoyadi);
+   alert(getAdi +" " + getSoyadi);
 
    // RemoveItem
    //localStorage.removeItem("name");
@@ -984,6 +988,9 @@ let localStorageData=()=>{
    //localStorage.clear();
 }
 localStorageData()
+
+
+
 
 ////////////////////////////////////////////////////////
 // jQuery
