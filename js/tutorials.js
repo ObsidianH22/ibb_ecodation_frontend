@@ -1,191 +1,221 @@
+// JS 1995 yılında Brandan Eich tarafından yazılıyor.
+// Cross platform
+// OOP uygun.
+
+//single Comment
 /*
-
-var name="hacer"; 
-console.log(name);  // "hacer"  (konsola yazdırır ama VSCode deprecated uyarısı verir)
-
-var surname;
-console.log(surname);  // undefined
-
-var age;
-console.log(age);  // undefined
-age=23;
-
-job="engineer";
-console.log(job); // konsola engineer yazdırır. hoisting işlemi yaptı burada
-var job;
-
+multiple Comment
 */
 
+// console.log("loglama");
+// console.info("info");
+// console.warn("warn");
+// console.error("error");
 
-//İlk önce değeri atadığımız için js onu bir bellekte tutuyor, “hmm varmı acaba benim aşağılarda bir yerlerde atanmış değişkenim “ diye düşünüp, sabırlı davranıp, aşağı doğru inmeye başlarken “işte buradaaa!” diye bağırıp değişkenini buluyor ve heyecanla hemen kendi değişkenini sahiplenerek onu baş tacı yapıyor.
+// alert("pop-up bilgilendirme-1");
+// window.alert("pop-up bilgilendirme-2");
+// window.document.writeln("ekranda yazı");
 
-//yani yapıyı şuna çeviriyor. 
+// Variable
+// var result=4423;
+// console.log(typeof result+" => "+result);
 
-/*
-var job;
-job="engineer";
-console.log(job);
-*/
+// var result=44.23;
+// console.log(typeof result+" => "+result);
 
+// var result="Js öğreniyorum";
+// console.log(typeof result+" => "+result);
 
-//Burada bilmemiz gereken en önemli şey, sadece değişkenler yukarı taşınır, değerler yukarı taşınmaz !
+// var result=true;
+// console.log(typeof result+" => "+result);
 
-//LET ve CONST hoisting işlemine duyarlı değildir !
+// Naming Convensition
+// var deneme="JS Data";
+// console.log(deneme);
 
-////////////////////////////////////////////////////////////////////////////////////////////////
+// var deneme44="JS Data";
+// console.log(deneme44);
 
-//Casting in JavaScript
+// var $deneme44="JS Data";
+// console.log($deneme44);
 
-//https://flaviocopes.com/javascript-casting/
+// var _$deneme44="JS Data";
+// console.log(_$deneme44);
 
-//Casting from number to string
+// var denemeVerisi="JS Data";
+// console.log(denemeVerisi);
 
-//String(10) //"10"
-//(10).toString() //"10"
+//var &~44$deneme44="JS Data";
+//console.log(44$deneme44);
 
-//Casting from boolean to string
+// interpreter, compiler 
+// senkron, asenkron ?
 
-//String(true) //"true"
-//true.toString() //"true"
-//String(false) //"false"
-//false.toString() //"false"
+// whoisting
+// result2=56;
+// var result2;
 
-//Casting from date to string
+///////////////////////////////////////////////////
+// Operators
+// + - * ** / %
+// ! DEĞİL &&=VE ||=VEYA
+// x++
+// x--
+// ++x
+// --x
 
-//String(new Date('2019-01-22'))
-//"Tue Jan 22 2019 01:00:00 GMT+0100 (Central European Standard Time)"
+// =   ATAMA
+// ==  EŞİT  (TÜRÜNE BAKMA)
+// === EŞİT  (TÜRÜNE BAK)
 
-//(new Date('2019-01-22')).toString()
-//"Tue Jan 22 2019 01:00:00 GMT+0100 (Central European Standard Time)"
+// var number1=40;
+// var number2=5;
+// console.log(number1+number2);
+// console.log(number1-number2);
+// console.log(number1*number2);
+// console.log(number1/number2);
+// console.log(number1%number2);
 
-//Special cases with string
+// cast
+// Number
+// String()
+// var userData=Number(prompt("Lütfen sayı giriniz"));
+// console.log(userData+45);
 
-//String(null) //"null"
-//String(undefined) //"undefined"
-//String(NaN) //"NaN"
+// undefined
+// var result4;
+// console.log(result4);
 
-//Number("1") //1
-//Number("0") //0
-//Number(" 1 ") //1  -- trim
-//Number("") //0
-//Number("12.2") //12.2
+// // NaN: Not A Number
+// var result5="asd"/4;
+// console.log(result5);
 
-//If a string contains invalid characters, it will generate a NaN.
+// // isNaN
+// var result6=4;
+// console.log(isNaN(result6)); //false: sayıdır
 
-//Casting from boolean to number
+// // Infinity
+// console.log(4/0);
 
-//Number(true) //1
-//Number(false) //0
+///////////////////////////////////////////////////
+// Math
+// console.log(Math.PI);
+// console.log(Math.E);
+// console.log(Math.min(4,1,99,555,25,-100));
+// console.log(Math.max(4,1,99,555,25,-100));
 
-//Special cases with number
+// console.log(Math.sqrt(16));
+// console.log(Math.abs(-25));
+// console.log(Math.pow(2,5));
 
-//Number(null) //0
-//Number(undefined) //NaN
-//Number(NaN) //NaN
+// console.log(Math.floor(3.9));
+// console.log(Math.ceil(3.1));
+// console.log(Math.round(6.4));
+// console.log(Math.round(6.5));
 
-//Converting to booleans
+// console.log(Math.sin(45));
+// console.log( Math.round(Math.random()*9+1));
 
-//Boolean(false) //false
-//Boolean(0) //false
-//Boolean(NaN) //false
-//Boolean("") //false
-//Boolean(null) //false
-//Boolean(undefined) //false
+//Örnek-4: Aşağıdaki örnekleri math ile çözelim ?
+// -5.9 sayıyının aşağıdaki işlemleri yaptıralım ?
+// 1-mutlak değeri alsın 5.9
+// 2-yuvarlama yapsın  6.0
+// 3-karesini alsın 36.00
+// 4-karekök alsın 6.0
+// 5-yuvarlama yapsın 6.0
+// 6-)çıkan sonucu 5 bölsün 6/5=1
+// 7-) iki sayı arasından karşılaştırma yapsın en küçüğünü alsın ve 1 ve 5
+// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin 
 
+// Örnek-5 : kullanıcı tarafından girilen bir sayıyı negatif mi pozitif mi olduğu ekran yazdıran algoritma ?
+//NOT: cast kullalım ?
 
-//undefined : değer verilmemiş değişkenler
-//Nan : Not a Number 
-//isNaN : sonuc false ise sayıdır
-//infinity : tanımsızlık. bir sayının sıfıra bölünmesi gibi. 
+// Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım
+//eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////
+// Number 
+// var sayi=15000;
+// console.log(sayi);
 
-//MATH FUNCTIONS
+// var sayi2=1.5E+4;
+// console.log(sayi2);
 
-/*
-console.log(Math.PI);
-console.log(Math.E);
-console.log(Math.min(4,1,99,555,25,-100));
-console.log(Math.max(4,1,99,555,25,-100));
+// binary,octal,decimal, hexadecimal
 
-console.log(Math.sqrt(16));
-console.log(Math.abs(-25));
-console.log(Math.pow(2,5));
+// binary : 0-1
+// var binary=0b00011;
+// console.log(binary);
 
-console.log(Math.floor(3.9));
-console.log(Math.ceil(3.9));
-console.log(Math.round(6.5));
-console.log(Math.round(6.4));
+// octal : 0-1-2-3-4-5-6-7
+// var octal=0o7612;
+// console.log(octal);
 
-console.log(Math.sin(45));
-console.log(Math.round(Math.random()*9+1));
+// decimal : 0-1-2-3-4-5-6-7-8-9
+// var decimal=123456;
+// console.log(decimal);
 
-*/
+// hexdecimal : 0-1-2-3-4-5-6-7-8-9-A-B-C-D-E-F
+// var hexadecimal=0xffa;
+// console.log(hexadecimal);
 
-//javascripte bilimsel gösterim. 2023000 sayısının farklı bilimsel yazış şekilleri:
+// Number() parseInt() nedir aralarındaki farklar ?
+// String() data.toString nedir aralarındaki farklar ?
+// Cast
+// database, port , api (string)
+// console.log(Number("10")+10);
+// console.log(parseInt("10")+10);
 
-/*
-var sayi1=2023000;
-var sayi2=2023E3; 
-var sayi3=20230E2;
-var sayi4=2.023E6;
-var sayi5=20.23E5;
-var sayi5=202.3E4;
-var sayi6=202.3E+4;  //+ işareti konularak da yazılır. aynı sonucu verir. 
-var sayi7=0.2023E+7;
-var sayi8=0.02023E+8;
+// console.log(String(30)+10);
+// var number=30;
+// console.log(number.toString()+10);
 
-console.log(sayi1+" sayi 1");
-console.log(sayi2+" sayi 2");
-console.log(sayi3+" sayi 3");
-console.log(sayi4+" sayi 4");
-console.log(sayi5+" sayi 5");
-console.log(sayi6+" sayi 6");
-console.log(sayi7+" sayi 7");
-console.log(sayi8+" sayi 8");
+///////////////////////////////////////////////////
+// var, let, const
 
-*/
+// var data1=11;
+// console.log(data1);
 
+// var data1=22;
+// console.log(data1);
 
-//ODEV : NUmber ile parseInt arasındaki fark nedir?
+// let data2=33;
+// console.log(data2);
 
-/*
-console.log(Number("10")+10);
-console.log(parseInt("10")+10);
+// let data3=33;
+// data3=44;
+// console.log(data3);
 
-*/
+// const data4=55;
+// console.log(data4);
 
-//ODEV : String() ile .toString arasındaki fark nedir?
+// const data5=55;
+// data5=66;
+// console.log(data5);
 
-//var - let - const 
+///////////////////////////////////////////////////
+// string
+// let str="js ÖĞreniyorum js ";
+// console.log(str);
 
-// String 
+// console.log(str.length);
+// console.log(str.trim().length);
 
-//boşluk bir karakter olarak kabul edilir. 
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
 
-/*
-let str=" js öğreniyorum js";
-console.log(str);
-console.log(str.length); //string in uzunluğunu belirtir
-console.log(str.trim().length); //boşluklar kesildikten sonraki uzunluğu verir
+// console.log(str.charAt(0));
 
-console.log(str.toUpperCase);
-console.log(str.toLowerCase);
+// console.log(str.indexOf("js"));
+// console.log(str.lastIndexOf("js"));
 
-console.log(str.charAt(0));
+// console.log(str.concat("sona"));
+// console.log(str.replace(str,"değiştir"));
 
-console.log(str.indexOf("js"));
-console.log(str.lastIndexOf("js")); //sondan arayarak ifadenin indeksini bulur
+// console.log(str.substring(1));
+// console.log(str.substring(0,4));
 
-console.log(str.concat("sona"));
-console.log(str.replace(str , "değiştir"));
-
-console.log(str.substring(1)); //
-console.log(str.substring(0,4)); //
-
-
-*/
-
+// Ödev 
 // ÖDEV NOT:5 adımı beraber yapalım.
 // kullanıcı tarafından girilen bir kelimenin (prompt)
 // let userData= prompt("Lütfen bir şeyler yazınız");
@@ -202,136 +232,231 @@ console.log(str.substring(0,4)); //
 // S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
 // S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
 
-//FUNCTION (Normal)
-//1 returnsuzParametresiz
-/*
-function returnsuzParametresiz(){
-    console.log("deneme");
-}
-returnsuzParametresiz()
-*/
+///////////////////////////////////////////////////
+// Function (Normal)
+// 1 retursuz Parametresiz
+// function retursuzParametresiz() {
+//     console.log("deneme");
+// }
+// retursuzParametresiz();
 
-//2 returnsuzParametreli
-/*
-function returnsuzParametreli(adi){ //parametre
-    console.log("deneme" + adi);
-}
-returnsuzParametreli("HamitM") //argüman
-*/
+// // 2 retursuz Parametresiz
+// function retursuzParametreli(adi) { // parametre: adi
+//     console.log("deneme " + adi);
+// }
+// retursuzParametreli("HamitM") // argüman: "HamitM"
 
-//3 returnluParametresiz
-/*
-function returnluParametresiz(){
-    return "deneme";
-}
-let result3 = returnluParametresiz();
-console.log(result3);
+// // 3 retursuz Parametresiz
+// function returnluParametresiz() {
+//     return "deneme55";
+// }
+// let result3 = returnluParametresiz();
+// console.log(result3);
 
-*/
-//4 returnluParametreli
-/*
-function returnluParametreli(soyadi){
-    return "deneme66" + soyadi;
-}
-let result4 = returnluParametreli("Mızrak");
-console.log(result4);
-*/
+// // 4 retursuz Parametresiz
+// function returnluParametreli(soyadi) {
+//     return "deneme66 " + soyadi;
+// }
+// let result4 = returnluParametreli("Mizrak");
+// console.log(result4);
 
-//return süz fonksiyonları direk console.log ile çağırabiliyoruz. returnlü olanları ise bir değişkene atarak çağırabiliyoruz. 
+///////////////////////////////////////////////////
+// // Normal Function
+// function normal() { }
 
-//ANONYMOUS FUNCTION
+// // Anonymous (Function)
+// let anonymous = function () { }
 
-//let anonymous=function(){}
+// // Arrow (Function)
+// let arrow = () => { }
 
-//ARROW FUNCTION
+///////////////////////////////////////////////////
+// let veya const
+// arrow function
 
-//let arrow = () => {}
+///////////////////////////////////////////////////
+// function deneme1(){
+//     console.log("normal function");
+// }
+// deneme1();
 
-////////////////////////////////////////////////////////////
+// const deneme2= function (){
+//     console.log("anonymous function");
+// }
+// deneme2();
 
-//CONDITION : IF - ELSE - ELSE IF - SWITCH CASE 
-/*
-const condi=()=> {
-    let number=4;
-    console.log((number>=2) ? "Büyüktür" : "Küçüktür");
-}
-condi()
-*/
+// const deneme3=  ()=>{
+//     console.log("arrow function function");
+// }
+// deneme3();
 
-//LOOPS : for - for each - while - do while 
+// Immedia Function ()();
+// (function(){
+//     console.log("deneme4");
+// })();
 
-/*
-
-let loop=()=> {
-    for (let i=1; i<=10; i++) {
-        document.write(i+ " ")
+///////////////////////////////////////////////////
+// condition
+const condi = () => {
+    let number = 4;
+    if (number >= 2) {
+        console.log("Büyüktür");
+    } else {
+        console.log("Küçüktür");
     }
 }
-loop();
+//condi();
 
-let loop2=()=> {
-    let i=1;
-    while ( i<=10) {
-        document.write(i+ " ")
+const condi2 = () => {
+    let number = 4;
+    if (number >= 2)
+        console.log("Büyüktür");
+    else
+        console.log("Küçüktür");
+
+}
+//condi2()
+
+const condi3 = () => {
+    let number = 4;
+    let result = (number >= 2) ? "Büyüktür" : "Küçüktür";
+    console.log(result);
+}
+//condi3()
+
+const condi4 = () => {
+    let number = 4;
+    console.log((number >= 2) ? "Büyüktür" : "Küçüktür");
+}
+//condi4();
+
+const condi5 = () => {
+    let number = 4;
+    if (number == "1") {
+        console.log("1");
+    } else if (number == 2) {
+        console.log("2");
+    } else if (number == 3) {
+        console.log("3");
+    } else if (number === 4) {
+        console.log("4");
+    } else {
+        console.log("1<=X<=5 dışındadır");
+    }
+}
+//condi5();
+
+const condi6 = () => {
+    let number = 4;
+    // break   : döngü kırmak
+    // return  : metot kırmak
+    // continue: 1 kereye mahsus es geç sonra döngüye devam et.
+    switch (number) {
+        case 1:
+            console.log("1");
+            break; // döngü kırmak
+        case 2:
+            console.log("2");
+            break;
+        case 3:
+            console.log("3");
+            break;
+        case 4:
+            console.log("4");
+            break;
+        default:
+            console.log("1<=X<=5 dışındadır");
+            break;
+    }
+}
+//condi6();
+///////////////////////////////////////////////////////
+// ÖDEV: 
+// Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi ? bunu yazan JS code yazınız.
+// (Dikkat: normal  function ile yazınız)
+
+// Kullanıcı tarafından girilen bir sayının tek mi, çift mi olduğunu yazan JS code yazınız.
+// (Dikkat:anonymous function ve ternary ile yazınız)
+
+let isOddEven = () => {
+    const result = 4;
+    if (result % 2 == 0)
+        console.log("çifttir");
+    else
+        console.log("tektir");
+}
+//isOddEven()
+
+// Kullanıcıdan alınan sayıya göre Haftanın günlerini switch-case ile JS code yazınız?
+// Örneğin: kullanıcı 1 girdi: 1=pazartesi yazacak
+
+////////////////////////////////////////////////////////
+// loop
+let loop = () => {
+    for (let i = 1; i <= 10; i++) {
+        document.write(i + " ")
+    }
+}
+//loop();
+//document.writeln("<br/>")
+
+let loop2 = () => {
+    let i = 1;
+    while (i <= 10) {
+        document.write(i + " ")
         i++
     }
 }
-loop2();
+//loop2();
+
+//document.writeln("<br/>")
 
 let loop3 = () => {
-    let i=1;
+    let i = 1;
     do {
-        document.write(i+" ")
-        i++
+        document.write(i + " ")
+        i++;
     }
-    while (i<=10);
+    while (i <= 10);
 }
+//loop3();
 
-loop3();
+// Örnekler
 
-*/
-
-// TRY - CATCH
-
-/*
-let trycathc = () => {
+////////////////////////////////////////////////////////
+// try catch (Error Handling)
+let tryCatchTuto = () => {
     try {
-        alertx("pop-up");
+        alertx("pop-pup");
+    } catch (error) {
+        console.log("hata mesajı: " + error.message);
+        console.log("hata mesajı: " + error.name);
+        console.error(error);
+    } finally {
+        console.log("db.close");
+        console.log("port.close");
     }
-   catch(error) {
-    console.log("hata mesajı: "+error.message);
-    console.log("hata mesajı: " + error.name);
-    console.error(error);
-   }
-   finally{
-    console.log("db.close");
-    console.log("port.close");
-   }
     console.log("son satır");
 }
+//tryCatchTuto()
+////////////////////////////////////////////////////////
+// debug nedir ?
+// 1 ile 10 dahil olmak üzere toplama işlemi yapan JS algoritmasını yazınız 
 
-trycathc()
-
-*/
-
-
-// DEBUG : Hata ayıklama 
-
-//1 ile 10 dahil olmak üzere toplama işlemi yapan js algoritmayı yazınız
-
-/*
-const debugData=()=> {
-    let sum=0;
-    for (let i=1; i<10; i++){
-        sum=sum+i;
+const debugData = () => {
+    let sum = 0;
+    for (let i = 1; i <= 10; i++) {
+        sum = sum + i;
     }
-    console.log("toplam : " + sum)
+    console.log("Toplam: " + sum);
 }
+//debugData()
 
-debugData()
-*/
-
-//Ödev : 
+////////////////////////////////////////////////////////
+// return break continue ?
+// break: döngünün çalışmasına izin verme
+// return: metotun çalışmasına izin verme
+// continue: sadece bir seferlik o şartta çalışma
 
 // SORU 1<=userData<=50 
 // 1 ile Kullanıcı tarafından alınan bitiş sayısına kadar toplama yapan Algoritma örneği 
@@ -344,90 +469,66 @@ debugData()
 // Dikkat: Bu algoritmayı Arrow Function ile yapalım.
 // (Clean code kuralları çercevesinde ) algoritma yapan JS program?
 
-/*
-let sumAll=()=> {
-    let userData=prompt("Lütfen bir sayı giriniz...");
- 
-    let sum=0; 
-    let evenCount=0, evenSum=0, evenNumbers="";let oddCount=0, oddSum=0, oddNumbers="";
+let sumExamplesData = () => {
+    let commonSum = 0;
+    let oddSum = 0, oddCounter = 0, oddNumber = "";
+    let evenSum = 0, evenCounter = 0, evenNumber = "";
+    // user data
+    let user = Number(prompt("Lütfen Bitiş sayısını yazınız"));
 
-    for(let i=1; i<=userData; i++){
-        if(i==44){
-            return
-        }
-        if (i==7){
-            continue;
-        }
-        if(i==50){
+    for (let i = 1; i <= user; i++) {
+        if (user === 44) {
+            console.log("secret key number failed  " + user);
             break;
         }
-        if(i%2==0){
-            evenCount+=1;
-            evenSum+=i; 
-            evenNumbers= evenNumbers + " " + i;  
-        }
-        else{
-            oddCount+=1;
-            oddSum+=i; 
-            oddNumbers= oddNumbers + " " + i; 
-        }
-        sum+=i;
-    }
-    console.log("Toplam : "+sum);
 
-    console.log("Tek sayılar: " + oddNumbers);
-    console.log("Tek sayı adedi: " + oddCount);
+        if (i === 50) {
+            console.log("en fazla 50 sayısına kadar hesaplanır " + user);
+            break;
+        }
+
+        if (i === 7) {
+            console.log("7 sayısını toplama !!! " + user);
+            continue;
+        }
+        if (i % 2 == 0) {
+            //evenSum = evenSum+i;
+            evenSum += i;
+            evenCounter++;
+            evenNumber = evenNumber + " " + i;
+        } else {
+            oddSum += i;
+            oddCounter++;
+            oddNumber = oddNumber + " " + i;
+        }
+        commonSum += i;
+    } // end for
+    console.log("Toplam: " + commonSum);
+
+    console.log("Tek sayılar: " + oddNumber);
+    console.log("Tek sayı adedi: " + oddCounter);
     console.log("Tek sayı toplam: " + oddSum);
 
-    console.log("Çift sayılar: " + evenNumbers);
-    console.log("Çift sayı adedi: " + evenCount);
+    console.log("Çift sayılar: " + evenNumber);
+    console.log("Çift sayı adedi: " + evenCounter);
     console.log("Çift sayı toplam: " + evenSum);
-}
-sumAll()
+} // end sumExamplesData
+//sumExamplesData()
 
-*/
 
-// RETURN BREAK CONTINUE
-
+////////////////////////////////////////////////////////
 //Örnek-1
-//y=3x+4k ==> 1.dereceden 2 bilinmeyenli denklem algoritması
+//y=3x+4k ==>1.dereceden2bilinmeyenlidenklem algoritması
 //Kullanıcı tarafından alınan x ve k değerlerini hesaplayan algoritma yazınız ?
-
-/*
-let denklem=()=> {
-    let userX=Number(prompt("X için değer giriniz..."));
-    let userK =Number(prompt("K için değer giriniz..."));
-
-    let y=(3*userX)+(4*userK);
-    console.log(y);
-}
-
-denklem()
-*/
 
 //örnek-2
 //Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
 //Formül: (derece*9/5)+32
 
-/*
-
-let userData = Number( prompt("Derece bilgisi giriniz..."));
-
-let result = (userData*9/5)+32;
-
-console.log( result );
-
-*/
-
 //örnek-3 operatör işlemleri: aşağıdaki örneği javascript ile yapalım
 //4+3*2(3:3-1*6+9:1+(3:3))
 
-/*
-let result=(4+(3*2)*((3/3)-(1*6)+(9/1)+(3/3)));
-console.log(result);
-
-*/
-
+////////////////////////////////////////////////////////
 // ÖDEV
 // kullanıcıdan aldığımız isim alınsın
 // kullanıcıdan aldığımız soyisim alınsın
@@ -437,191 +538,170 @@ console.log(result);
 // H**** MIZ***
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
-/*
+let usernameAndSurnameMasking = () => {
+    const usernameAndSurname = prompt("Lütfen adınızı ve soyadınızı giriniz");
 
-//aşağıdaki maskeleme kodu tekrarlı harfler içeren durumlarda hata veriyor. 
-let masking = () => {
-    //const userNameSurname=prompt("İsim ve Soyisim giriniz...");
-
-    const userNameSurname="hamiiiiiittttt mıııızzzzraaak"
-
-    const userIndex=userNameSurname.indexOf(" ");
-    let userName=userNameSurname.substring(0, userIndex).toUpperCase();
-
-    for(let i=3; i<userName.length; i++){
-        userName=userName.replace(userName.charAt(i), "*");
+    const userIndex = usernameAndSurname.indexOf(" ");
+    let username = usernameAndSurname.substring(0, userIndex);
+    for (let i = 1; i < username.length; i++) {
+        username = username.replace(username.charAt(i), "*");
     }
+    username = username.toUpperCase()
+    console.log(username.toUpperCase());
 
-    console.log(userName); 
+    let surname = usernameAndSurname.substring(userIndex + 1, usernameAndSurname.length).toUpperCase();
+    for (let i = 3; i <= username.length; i++) {
+        surname = surname.replace(surname.charAt(i), "*");
+    }
+    console.log(surname);
+    console.log(username.concat(" ").concat(surname));
+}
+//usernameAndSurnameMasking();
 
-let userSurname=userNameSurname.substring(userIndex+1,userNameSurname.length).toUpperCase();
+////////////////////////////////////////////////////////
+// software  prensible
+// KISS, YAGNI, SOLID, CLEAN CODE, SPAGETTI CODE, DUMMY CODE
+////////////////////////////////////////////////////////
+// Monad 
+// const birinci=()=>{
+// let user=Number(prompt("Lütfen Sayı Giriniz"));
+// return user;
+// }
 
+// const ikinci=()=>{
+// let data=birinci();
+// console.log(Math.sqrt(data));
+// }
+//ikinci()
 
-for(let i=3; i<userSurname.length; i++) {
-    userSurname=userSurname.replace(userSurname.charAt(i), "*");
+////////////////////////////////////////////////////////
+// setTimeOut(),setInterval();
+
+// // belirli zaman sonra tek bir kere çalışır ve durur
+// setTimeout(function(){
+//     console.log("setTimeout çalıştı");
+// },2000);
+
+// // belirli zaman sonra çalışır ve sonsuza kadar kapanıp tekrar çalışır.
+// setInterval(()=>{
+//     console.log("setInterval çalıştı");
+// },3000);
+
+////////////////////////////////////////////////////////
+// callbackfunction
+const birinci = (data) => {
+    return Math.pow(data, 2);
 }
 
-console.log(userSurname);
-console.log(userName.concat(" ").concat(userSurname));
-
+const ikinci = (callbackFunction) => {
+    let user = Number(prompt("Lütfen Sayı Giriniz"));
+    let data = callbackFunction(user);
+    console.log(data);
 }
+//ikinci(birinci)
+////////////////////////////////////////////////////////
+// promise
 
-masking();
-
-*/
-
-///////////////////////////////////////////////
-
-// Monad : bir fonksiyonun çıktısı başka bir fonksiyonun girdisi ise buna MONAD deniliyor... 
-
-/*
-
-const birinci = ()=>{
-    let user=Number(prompt("Lütfen sayı giriniz... "));
-    return user;
-
-}
-
-const ikinci = ()=> {
-let data=birinci();
-console.log(Math.sqrt(data));
-}
-
-ikinci();
-
-*/
-
-// setTimeOut(), setInterval()
-
-/*
-
-//belirli zaman sonra tek bir kere çalışır ve durur
-setTimeout (function () {
-console.log("setTimeout çalıştı.");
-}
-, 2000);
-
-
-//belirli zaman sonra çalışır ve sonsuza kadar kapanıp tekrar çalışır 
-setInterval (function(){
-    console.log("setInterval çalıştı ")
-},1000) ;
-
-*/
-
-//callBackFunction : fonksiyonu geri çağırmak
-
-//coklu işlemler için kullanılıyor. daha iyi versiyonu olarak "promise" var. o daha sık kullanılıyor
-
-/*
-const birinci=(data)=> {
-    return Math.pow(data,2);
-}
-
-const ikinci=(callBackFunction)=> {
-   let user=(Number(prompt("Lütfen sayı giriniz...")));
-   let data=callBackFunction(user);
-   console.log(data);
-}
-ikinci(birinci);
-
-*/
-
-//promise
-/*
-const promTutorials=()=>{
-    //catch 1 tane olmak zorunda
-    let data = new Promise((resolve,reject)=>{
-        let status = 200;
-        if(status===200)
-        resolve("çalıştı");
+const promTutorials = () => {
+    // catch 1 tane olmak zorunda
+    let data = new Promise((resolve, reject) => {
+        let status = 400;
+        if (status === 200)
+            resolve("çalıştı");
         else
-        reject("çalışmadı");
-    }).
-    then(
-        ()=>{console.log("olumlu"); }
-        ).
-    catch(
-        (err)=>{console.error(err); }
-        );
+            reject("çalışmadı")
+    }).then(
+        () => { console.log("olumlu"); }
+    ).catch(
+        (err) => { console.error(err); }
+    );
 }
-promTutorials();
-*/
+//promTutorials()
 
-// dizi : elimizdeki verileri düzenli şekilde saklamaya yarar
-let arr=()=>{
-    const numbers=[3,4,5,"str", 66];
+// asyn/await
+
+////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////
+// dizi, Iterative for, for in, for of, forEach, map, filter , fill
+let arr = () => {
+    const numbers = [3, 5, 6, 1, 9, 4, 66];
     return numbers;
 }
-let arrResult=()=>{
-    let data=arr();
+
+let arrResult = () => {
+    let data = arr();
+    // console.log(data);
+    // console.log(data[0]);
+    // console.log(data[5]);
+    // console.log(data[data.length - 1]);
+
+    // //Iterative For Loop
+    // for(let i=0 ;i<data.length;i++){
+    //     document.write(data[i]+" ");
+    // }
+    // document.write("<br/>");
+    // // for in 
+    // for(let temp in data){
+    //     document.write(temp+" => "+data[temp]+"<br/>");
+    // }
+
+    // document.write("<br/>");
+    // // for of 
+    // for(let temp of data){
+    //     document.write(temp+" ");
+    // }
+    //document.write("<br/>");
+    // ForEach
+    // forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
+    // data.forEach((value, index, array) => {
+    //     document.write(index + " => " + value + "<br/>");
+    //     //document.write(`${index} => ${value} <br/>`);
+    // });
+
+    //document.write("<br/>");
+    // filter
+    // filter<S extends T>(predicate: (value: T, index: number, array: T[]) => value is S, thisArg?: any): S[];
+    // let result1 = data.filter((value, index, array) => {
+    //     return value % 2 == 0
+    // }).forEach((value, index, array) => {
+    //     //document.write(index+" => "+value+"<br/>");
+    //     document.write(`${index} => ${value} <br/>`);
+    // });
+
+    // document.write("<br/>");
+    // map 
+    // map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[];
+    // data.map((value, index, array) => {
+    //     return value += 10;
+    // }).forEach((value, index, array) => {
+    //     //document.write(index+" => "+value+"<br/>");
+    //     document.write(`${index} => ${value} <br/>`);
+    // });
+
+    // dizilere devam.
+    document.writeln("Elaman sayısı: " + data.length)
     console.log(data);
-    console.log(data[0]);
-    console.log(data[4]);
-    console.log(data[data.length-1]);
-/*
-    //iterative for loop
-    for(let i=0;i<data.length;i++) {
-        document.write(data[i]+" ")
-    }
+    data.push(99);
+    data.unshift(11);
 
-    document.write("<br/>");
+    console.log(data);
+    data.pop() //sonda 1 eleman çıkar
+    data.shift() //baştan 1 eleman çıkar
+    console.log(data);
 
-    //for in  : index numaralarıyla veriyi getirecek
-    for(let temp in data){
-        document.write(temp+" => "+data[temp]+"<br/>");
-    }
+    //data.sort();
+    //console.log(data);
 
-    document.write("<br/>");
-    
-    //for of : sadece elemanları getirecek.
-    for(let temp of data){
-        document.write(temp+" ");
-    }
+    // data.reverse();
+    // console.log(data);
 
-    document.write("<br/>");
-
-    */
-
-    //foreach
-    //forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
-    data.forEach((value, index,array)=>{
-       // document.write(index+" => "+value+"<br/>");
-        document.write(`${index} => ${value} <br>`);
-    });
-
-  //  document.write("<br/>");
-
-    // filter  :
-
-    //filter<S extends T>(predicate: (value: T, index: number, array: T[]) => value is S, thisArg?: any): S[];
-
-   let result1= data.filter((value, index,array)=>{
-    return value%2==0
-
-   }).forEach((value, index,array)=>{
-     document.write(`${index} => ${value} <br>`);
- });
-
- //document.write("<br/>");
-
-
- // map  :
-
- //map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[];
-
- data.map((value, index, array) => {
-    return value += 10
-
- }).forEach((value, index, array) => {
-     document.write(`${index} => ${value} <br>`);
- });
-
+    data.sort().reverse();
+    console.log(data);
+    console.log(data.toString().substring(0, 2));
+    // splice ,slice 
 }
-
 //arrResult();
-
-//araştırma ödevi : FIFO(First In First Out) Nedir , LIFO (Last In First Out) Nedir ?
 
 // ÖDEV
 /*
@@ -640,316 +720,290 @@ bu şarta uyan kaç tane sayı vardır ?
  buradaki sayıları ekranda gösterelim. ?      ==> (forEach)
  bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
  2.YOL map,filter,counter
-
 */
-
-
-let array=()=>{
-    const numbers=[3,44,10,"str", 77];
-    return numbers;
-}
-let arrayResult = () => {
-    let data2=array();
-
-    document.writeln("Eleman sayısı : " + data2.length);
-
-// PUSH : veriyi dizinin sonuna  ekler
-
-    data2.push(99); 
-    console.log("push uygulandı : " + data2);
-
-
-// UNSHIFT : veriyi dizinin başına ekler
-
-    data2.unshift("hk"); 
-    console.log("unshift uygulandı : " + data2);
-
-// POP : dizinin sonundaki veriyi siler
-
-    data2.pop();
-    console.log("pop uygulandı : " + data2);
-
-// SHIFT : dizinin başındaki veriyi siler
-   data2.shift();
-   console.log("shift uygulandı :  " + data2);
-
-// SORT : küçükten büyüğe verileri sıralar . (ilk rakamı baz alıyor...)
-
-    data2.sort();
-    console.log("sort uygulandı : " + data2);
-
-// REVERSE : verileri sondan başa doğru sıralar 
-
-    data2.reverse();
-    console.log("reverse uygulandı : " + data2);
-// sondan başa ters sıralama için : 
-
-    data2.sort().reverse();
-    console.log("ters sıralama yapıldı : " + data2);
-
-// toString : dizinin tüm elemanlarını stringe çevirmek
-
-    console.log("toString uygulandı : " + data2.toString().substring(0,20));
-
-// SPLICE , SLICE , ilerde 
-
-}
-
-//arrayResult();
-
-/*
-
-//callback orneği 
-
-let callbackFunctionComputer=()=>{
-
-    //dizi objesi içinde 5 tane random obje oluşturalım
-    const computerArray=[];
-    for(let i=0; i<5; i++) {
-        let computerObject= 
+////////////////////////////////////////////////////////
+// callback - promise örneği
+let callbackFunctionComputer = () => {
+    // dizi objesi içerisinde 5 tane random obje oluşturalım. 
+    const computerArray = [];
+    for (let index = 0; index < 5; index++) {
+        let computerObject =
         {
-            computerName:`callback computer ${i+1 }`,
-            price: `${i + 1}`*`${Number(100)}`
+            computerName: `computer ${index + 1}`,
+            price: `${index + 1}` * `${Number(100)}`
         }
         computerArray.push(computerObject);
     }
     console.log(computerArray);
 
-    // bu dizi içindeki sadece computer Name bileşenlerini gösterin (Map)
-    const arrayInComputerName=()=>{
-        computerArray.map((temp)=>{
-        console.log(`${temp.computerName}`);
+    // bu dizi içindeki sadece computer Name bileşenleri gösterin (Map)
+    const arrayInComputerName = () => {
+        computerArray.map((temp) => {
+            //console.log(`${temp.computerName}`);
         })
     }
     arrayInComputerName();
 
-    //call back function Price
-    const arrayInComputerObject=(obj, callBackFnc)=>{
-    computerArray.push(obj);
-    callBackFnc();
+    // call back function Price
+    const arrayInComputerObject = (obj, callBackFnc) => {
+        computerArray.push(obj);
+        callBackFnc();
     }
-    arrayInComputerObject({computerName:"computer 6 ", price:600},arrayInComputerObject)
-} 
-callbackFunctionComputer();
-
-*/
+    arrayInComputerObject({ computerName: "computer 6", price: 600 }, arrayInComputerName)
+}
+//callbackFunctionComputer();
 
 
-// promise orneği 
 
-let promiseFunctionComputer=()=>{
-
-    //dizi objesi içinde 5 tane random obje oluşturalım
-    const computerArray=[];
-    for(let i=0; i<5; i++) {
-        let computerObject= 
+// callback - promise örneği
+let promiseFunctionComputer = () => {
+    // dizi objesi içerisinde 5 tane random obje oluşturalım. 
+    const computerArray = [];
+    for (let index = 0; index < 5; index++) {
+        let computerObject =
         {
-            computerName:`callback computer ${i+1 }`,
-            price: `${i + 1}`*`${Number(100)}`
+            computerName: `computer ${index + 1}`,
+            price: `${index + 1}` * `${Number(100)}`
         }
         computerArray.push(computerObject);
     }
     console.log(computerArray);
 
-    // bu dizi içindeki sadece computer Name bileşenlerini gösterin (Map)
-    const arrayInComputerName=()=>{
-        computerArray.map((temp)=>{
-        console.log(`${temp.computerName}`);
+    // bu dizi içindeki sadece computer Name bileşenleri gösterin (Map)
+    const arrayInComputerName = () => {
+        computerArray.map((temp) => {
+            //console.log(`${temp.computerName}`);
         })
     }
     arrayInComputerName();
 
     // promise function 
-    const arrayInComputerObject=(obj)=>{
-        const promiseReturn = new Promise(()=>{
+    const arrayInComputerObject = (obj) => {
+        const promiseReturn = new Promise(() => {
             computerArray.push(obj);
         })
-    return promiseReturn;
-
+        return promiseReturn;
     }
-    arrayInComputerObject({computerName:"computer 6 ", price:600})
-    .then(()=>{})
-    .catch((err)=>{console.log(err);});
-} 
+    arrayInComputerObject({ computerName: "computer 6", price: 600 })
+        .then((response) => { console.log(response); })
+        .catch((err) => { console.error(err); });
+}
 //promiseFunctionComputer();
 
-//ÖDEV : clean kod kapsamında tekrar eden kısımlar düzenlenecek.
 
+////////////////////////////////////////////////////////
+// Json nedir ? XML nedir arasındaki fark ?
 
-//OBJECT YAPISI
+let objectTutorials = () => {
 
-let objectTutorials =() => {
-const personObj = {
-    "name" : "Hamit",
-    "surname" : "Mızrak",
-    "number" : 44,
-    "isLogin" : true,
-    //object içinde dizi
-    "software" : ["Html5", "Css3", "Js"],
-    //object içinde fonksiyon 
-    fulllName:function() {
-        return this.name + " " + this.surname;
-    }
-};
+    // object
+    const personObj = {
+        "name": "Hamit",
+        surname: "Mızrak",
+        "number": 44,
+        "isLogin": true,
+        "software": ["Html5", "css3", "js"],
+        fullName: function () {
+            return this.name + " " + this.surname;
+        }
+    };
+    console.log(personObj);
 
-console.log(personObj);
+    // variable
+    console.log(personObj.name);
+    console.log(personObj.surname);
 
-// variable yapısı
-console.log(personObj.name);
-console.log(personObj.surname);
+    // variable nested
+    console.log(personObj["name"]);
+    console.log(personObj["surname"]);
 
-// variable nested
-console.log(personObj["name"]);
-console.log(personObj["surname"]);
+    // Array
+    console.log(personObj.software[0]);
 
-// Array 
-console.log(personObj.software[0]);
+    const objectToString = JSON.stringify(personObj);
+    console.log(objectToString);
 
-// Object turundeki veriyi stringe çevirdik. 
-const objectToString=JSON.stringify(personObj);
-console.log(objectToString);
+    const stringToObject = JSON.parse(objectToString);
+    console.log(stringToObject.name);
 
-// String türündeki veriyi Object veri türüne çevirdik
-const stringToObject=JSON.parse(objectToString);
-console.group(stringToObject.name);
+    // Object Variable
+    personObj.language = "english";
+    console.log(personObj.language);
 
-// Object Variable : Var olan obje nize yeni bir özellik eklemek 
-personObj.language = "english";
-console.log(personObj.language);
-
-//function callback. object verisi içindeki fonksiyonu çağırıyoruz: 
-console.log(personObj.fulllName());
-
+    // function callback
+    console.log(personObj.fullName());
 }
+//objectTutorials();
 
-// objectTutorials()
-
-
-//ÖDEV : json Nedir , XML Nedir ? arasındaki fark Nedir 
-
-// OBJECT CONSTRUCTOR : Kurucu Metotlar
-
+// object constructor
 let objectConstructor = () => {
-let personConstructor=function(name, surname){
-    this.name=name;
-    this.surname = surname;
-    console.log(this);
-}
-let personResult = new personConstructor("Hamit", "Mızrak");
-console.log(personResult.name);
-}
-// objectConstructor()
+    let PersonConstructor = function (name, surname) {
+        this.name = name;
+        this.surname = surname;
+        console.log(this);
+    }
 
+    let personResult = new PersonConstructor("Hamit", "Mızrak");
+    console.log(personResult.name);
+}
+//objectConstructor();
 
-// call apply bind 
+////////////////////////////////////////////
+// call, apply, bind
+// anonymous function ile arrow function arasındaki farka bakmanızı istiyoruz.
+
 let noParameterCallApplyBind = () => {
 
+    // function
     let functionOtherObject = function () {
-        document.writeln(`Parametresiz Function : ${this.adi}<br/>` )
+        document.writeln(`Parametresiz Function: ${this.adi}<br/>`)
     };
-    let objectData={
+
+    // object
+    let objectData = {
         "adi": "Spora Gidiyorum"
     };
 
     functionOtherObject.call(objectData);
     functionOtherObject.apply(objectData);
-    let deneme =  functionOtherObject.bind(objectData);
-   deneme();
-
+    let deneme = functionOtherObject.bind(objectData);
+    deneme();
 }
 //noParameterCallApplyBind();
 //document.writeln(`<br/>`)
 
-///////////////////
+let parameterCallApplyBind = () => {
 
-let ParameterCallApplyBind=()=>{
-
-    let functionOtherObject =function(surname){
-        document.writeln(`Parametreli Function : ${this.adi}=> ${ surname } <br/>` )
+    // function
+    let functionOtherObject = function (surname) {
+        document.writeln(`Parametresiz Function: ${this.adi} => ${surname}<br/>`)
     };
-    let objectData={
-        "adi": "Spora Gidiyorum",
+
+    // object
+    let objectData = {
+        "adi": "Spora Gidiyorum"
     };
 
     functionOtherObject.call(objectData, "Mızrak");
     functionOtherObject.apply(objectData, ["Mızrak"]);
-    let deneme =  functionOtherObject.bind(objectData, "Mızrak");
-   deneme();
-
+    let deneme = functionOtherObject.bind(objectData, "Mızrak");
+    deneme();
 }
-//ParameterCallApplyBind();
+//parameterCallApplyBind();
 
-///////////////////
-
+////////////////////////////////////////////////////////
 // event
-
-let eventFunction=()=> {
+let eventFunction = () => {
     alert("deneme")
 }
 
+////////////////////////////////////////////////////////
+// dom
+let newDataDate = () => {
+    // Override: Ezmek
+    // alert("dom");
+    // let now = document.getElementById("text_data");
+    // HTML
+    // now.innerHTML ="<b><i><mark>"+ new Date().getFullYear(); +"</mark></i></b>";
+    // now.innerHTML = `<b><i><mark> ${new Date().getFullYear()} </mark></i></b>`;
 
-// dom  : document object manipulation 
+    // QUERYSELECTOR id #   class .
+    let now = document.querySelector("#text_data");
 
-let newDataDate = ()=> {
-    //let now = document.getElementById("text_data");
+    // TEXT
+    // now.innerText = `<b><i><mark> ${new Date().getFullYear()} </mark></i></b>`;
+    now.innerText = `${new Date().getFullYear()}`;
 
-    // QUERY SELECTOR
-    let now = document.querySelector("#text_data")
-
-    //HTML 
-    //now.innerHTML=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
-
-    //TEXT : text datası gerekirse düz metin şu şekilde kullanıyoruz : 
-    // now.innerText=`<b><i><mark> ${new Date().getFullYear()}  </mark></i></b>`;
-
-    now.innerText=`${new Date().getFullYear()}`;
-
-    // CSS 
-  now.style.color="yellow";
-  now.style.backgroundColor="black";
-  now.style.padding="5rem";
-
-  
+    // CSS
+    now.style.color = "yellow";
+    now.style.backgroundColor = "black";
+    now.style.padding = "5rem";
 }
-
-// örnek : paragraf_id2 adında bir paragraf olsun. bu paragrafa kullanıcı mouse ile tıkladığında aşağıda zspan id="special_id"></span> içine tıklandı veya paragraf üstüne gelindi yazsın. 
-
-let newDataText =()=> {
-    let now = document.getElementById("text_data2")
-    now.innerHTML=`<b><i><mark> ${"paragraf üzerine gelindi"}  </mark></i></b>`;
-}
-
-
-// DOM : detay 
 
 let domData2 = () => {
+    //alert("çalıştı");
 
-    // ID 
-    //let domUserData=document.getElementById("dom_id").innerText="Id ye göre...";  
+    // ID
+    //let domUserData=document.getElementById("dom_id").innerText="ID";
 
     // Class
-    //let domUserData=document.getElementsByClassName("class-data")[0].innerText="class Data";
+    //let domUserData=document.getElementsByClassName("dom_class")[0].innerText="class Data";
 
-    // Tag Name
-    //let domUserData=document.getElementsByTagName("p")[1].innerText="tag Data ";
+    // Tag name
+    // let domUserData=document.getElementsByTagName("p")[1].innerText="class Data";
 }
 
-// ALIŞTIRMA : Kullanıcı butona tıkladığında kullanıcıya soru sorsun. Farklı bir sayfaya gitmek ister misiniz  ? Evet se farklı bir sayfaya redirect , değilse alert versin 
+// paragrag_id2 adından bir paragraf olsun bu paragrafa kullanıcı mouse ile tıkladığında
+// aşağıda <span id="special_id"></span> içine tıklandı veya paragraf üstüne gelindi.
 
-let outSite = ()=> {
-    let userInformation=window.confirm("farklı bir sayfaya gitmek ister misiniz") ? window.location=("https://www.ecodation.com") : window.alert("bu sayfada kalındı.");
+////////////////////////////////////////////////////////
+
+// Butona tıkladığımızda kullanıcı soru sorsun
+// Farklı bir sayfaya gitmek ister misiniz ?
+// evet farklı bir sayfaya redirect 
+// değilse alert versin 
+
+let outSite = () => {
+    //alert("deneme");
+    let userInformation =
+        window.confirm("Farklı bir sayfaya gitmek ister misiniz ?")
+            ? window.location = "https://www.ecodation.com"
+            : window.alert("Bu sayfada kalındı");
 }
 
-// Listener 
 
-let userListener =()=> {
-    let listenerParag=document.getElementById("parag_list");
-    listenerParag.addEventListener("click", function(e){
-     //alert(e.preventDefault+ " "+ e.target)  ; 
-     document.getElementById("log_admin").innerHTML="takip edildi / okundu";
+// listener
+//  Ödev: Kullanıcı bu paragrafa kaç kere tıkladı ?
+let userListener = () => {
+    let listenerParag = document.getElementById("parag_list");
+    listenerParag.addEventListener("click", function (e) {
+        //alert(e.preventDefault+" "+e.target);
+        //document.getElementById("log_admin").innerHTML="takip edildi";
+        $("#log_admin").html("takip edildi");
     });
 }
+//userListener()
 
-userListener()
+////////////////////////////////////////////////////////
+// localStorage (Bireysel)
+// Verileri saklarız. Database, Browser
 
- 
+let localStorageData=()=>{
+
+   const adi= localStorage.setItem("name",prompt("adınız giriniz"));
+   const soyadi= localStorage.setItem("surname",prompt("soyadınızı giriniz"));
+   console.log(localStorage);
+
+   const getAdi=localStorage.getItem("name");
+   alert(getAdi);
+
+   // RemoveItem
+   //localStorage.removeItem("name");
+
+   // Clear
+   //localStorage.clear();
+}
+localStorageData()
+
+////////////////////////////////////////////////////////
+// jQuery
+
+////////////////////////////////////////////////////////
+// VKI
+// KDV hesaplaması: JS
+// jquery ajax GET/POST
+// Login Validation
+// jquery hangi tuşa bastım bana söylesin.
+
+////////////////////////////////////////////////////////
+// REACT
+
+
+
+
+
+
+
+
+
+

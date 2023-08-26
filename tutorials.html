@@ -11,64 +11,64 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+  <!-- jquery  -->
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  <script src="./js/jquery-3.7.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body class="container">
- 
-<h3 class="text-center text-primary text display-4">js</h3>
+  <h3 class="text-center text-primary display-4">JavaScript</h3>
+<!--
+ <button class="btn btn-primary" onclick="eventFunction()">onclick</button>
+  <button class="btn btn-primary" ondblclick="eventFunction()">ondblclick</button>
 
-
-
-<button class="btn btn-primary" onclick="eventFunction()">onclick</button>
-<button class="btn btn-primary" ondblclick="eventFunction()">ondblclick</button>
-<button class="btn btn-primary" onmousewheel="eventFunction()">onmousewheel</button>
-<button class="btn btn-primary" onmouseleave="eventFunction()">onmouseleave</button>
-<button class="btn btn-primary" onmouseover="eventFunction()">onmouseover</button>
-<br><br>
-<button class="btn btn-primary" onkeydown="eventFunction()">onkeydown</button>
-<button class="btn btn-primary" onkeyup="eventFunction()">onkeyup</button>
-
-<p id="parag_id" style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur provident veniam quas itaque possimus id nemo blanditiis. Obcaecati eius in itaque, optio temporibus consequatur rerum maiores nesciunt voluptatum facilis. Veniam!
-  Exercitationem earum laborum reiciendis iste iure at perspiciatis autem, atque, eligendi molestiae culpa! Ipsum totam molestias iusto doloremque, ipsa deserunt vel reprehenderit autem aut maiores illum cum impedit beatae omnis.
-  Doloremque, voluptates possimus. Soluta assumenda dicta sequi sint labore magnam enim. Similique, natus provident atque delectus voluptas at saepe nam impedit quas explicabo accusantium officiis architecto perspiciatis! Enim, sit in!
-  Mollitia tempora, officiis, iusto quasi, repellat animi exercitationem minima illum excepturi vel voluptatem laudantium velit reiciendis at ab molestiae necessitatibus veniam nihil omnis rerum ipsum in? Id necessitatibus eaque neque!</p>
-
-  <p id="parag_id2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa dolorem nihil quasi necessitatibus ab molestiae? Est odio autem dicta quos reprehenderit dolores exercitationem maxime impedit. Optio quasi tempore iusto!</p>
-
-  <br><br>
+  <button class="btn btn-success" onmousewheel="eventFunction()">onmousewheel</button>
+   <button class="btn btn-danger" onmouseleave="eventFunction()">onmouseleave</button>
+    <button class="btn btn-danger" onmouseover="eventFunction()">onmouseover</button> 
+  <br />
+  <br /> 
   
+  <button class="btn btn-danger" onkeydown="eventFunction()">onkeydown</button>
+  <button class="btn btn-danger" onkeyup="eventFunction()">onkeyup</button> 
+
+-->
+   <p id="parag_id" style="text-align: justify;">Lorem recusandae harum, provident maiores repellat doloremque! Dolorum
+    iure soluta ipsum delectus magni neque, eveniet aut officiis id aperiam aliquid voluptatibus est suscipit aliquam!
+  </p>
 
   <button class="btn btn-primary" onclick="newDataDate()">Data</button>
-
-  <span  id="text_data">...</span>
-
+  <span id="text_data">...</span>
+  <hr>
+  <hr>
+  <p id="dom_id" class="dom_class" name="dom_name">Dom öğreniyorum</p>
+  <button class="btn btn-warning" onclick="domData2()">Dom Click</button>
   <br><br>
+  <button class="btn btn-success" onclick="outSite()">Out Site</button> 
 
-  <p id="parag_id2" onclick="newDataText()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa dolorem nihil quasi necessitatibus ab molestiae? Est odio autem dicta quos reprehenderit dolores exercitationem maxime impedit. Optio quasi tempore iusto!</p>
+  <hr>
+  <hr>
+  <p id="parag_list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veritatis unde minus aspernatur
+    adipisci veniam voluptatem pariatur cumque tempore ab repellendus, deleniti similique, dolores voluptas impedit
+    necessitatibus modi voluptate autem?
+    Numquam nesciunt magnam dolore soluta, unde vero explicabo corrupti? Laboriosam repellat, veritatis pariatur
+    perferendis quisquam ipsum velit impedit amet facere tenetur quia necessitatibus incidunt enim beatae facilis quam?
+    Error, officiis!
+    Cumque iste placeat, saepe reprehenderit porro deserunt adipisci rerum consequuntur. Dicta assumenda praesentium
+    quisquam nobis! Molestiae quasi enim aut eos expedita eius laborum, asperiores saepe sed eaque eum laboriosam
+    incidunt?</p>
+  Log Information: <span id="log_admin"></span>  
 
-  <span class="text-danger" id="text_data2"></span>
-
-  <button  class="btn btn-warning" onclick="domData2()">Data 2</button>  
-  
-  <span class="class-data" id="dom_id"></span>
-  <br><br>
-  
-  <button  class="btn btn-success" onclick="outSite()">Out Site</button>  
-  
-  <p id="parag_list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam culpa vel sint inventore ullam quisquam tenetur rerum modi saepe, veritatis facere reiciendis velit ad! Magnam consectetur amet accusamus sed impedit.</p>
-
-<span id="log_admin">Log Information</span>  
-  
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
-
-<script src="js/tutorials.js"></script>
+    </script>
+  <!-- external js -->
+  <script src="js/tutorials.js"></script>
 </body>
 
 </html>
