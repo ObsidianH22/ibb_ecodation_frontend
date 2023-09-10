@@ -990,11 +990,38 @@ let localStorageData=()=>{
 //localStorageData()
 
 
-
-
-
 ////////////////////////////////////////////////////////
 // jQuery
+
+// https://www.toptal.com/developers/keycode
+// jquery hangi tuşa bastığımızı söylesin
+
+let userJqueryKey =() => {
+
+    // jQuery hazırlanması
+    $(document).ready(function() {
+        $(document).keydown(function (userButton){
+
+    // https://www.toptal.com/developers/keycode
+    
+    console.log(userButton);
+    console.log(userButton.keyCode);
+
+    //
+    userButton.preventDefault();
+    
+        // ENTER a basıldı    
+        if(userButton.keyCode==13){
+           // alert("ENTER a bastınız.")
+            console.log("ENTER a bastınız.");
+            }
+            
+
+        }) // end keydown
+    }); // end document ready
+}; // end userJqueryKey
+
+userJqueryKey()
 
 ////////////////////////////////////////////////////////
 // VKI
