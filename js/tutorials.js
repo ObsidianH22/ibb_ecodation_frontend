@@ -1013,7 +1013,6 @@ let userJqueryKey =() => {
         // ENTER a basıldı 
        // if(userButton.ctrlKey){} //ctrl basılarak mı tıklanmış
 
-        
         if(userButton.keyCode==13){ // her karakterin sayısı var ! enter için 13 
            // alert("ENTER a bastınız.")
             console.log("ENTER a bastınız.");
@@ -1024,10 +1023,38 @@ let userJqueryKey =() => {
     }); // end document ready
 }; // end userJqueryKey
 
-userJqueryKey()
+//userJqueryKey()
 
 ////////////////////////////////////////////////////////
-// VKI
+
+
+// VKI (Vücut Kitle İndeksi)
+// Kullanıcıdan alınan Kilo ve Boy verileri formda inputtan alınır
+// Formül: Kilo / ((Boy)/100)^2
+// Eğer Formül sonucu  
+// 18 < X    çıkarsa  Düşük Kilolu (Doktora Gidiniz) 
+// 18 <= X < 24 çıkarsa Normal Kilolu, 
+// 24 <= X < 29 çıkarsa fazla kilolu
+// 29 <= X < 32 çıkarsa Obez
+// X >= 32 çıkarsa Aşırı Obez Kilolu (Doktora gidiniz)
+
+// VKI butonu olsun. bu butona bastığımızda (modal) form açılsın. 
+// input : kilo
+// input : boy
+// submit buton
+// Not: kilo, boy, formül sonucu, localstorage olarak saklansın. 
+
+
+
+
+
+
+
+
+
+
+
+
 // KDV hesaplaması: JS
 // jquery ajax GET/POST
 // Login Validation
