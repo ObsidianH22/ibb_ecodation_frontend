@@ -1010,8 +1010,11 @@ let userJqueryKey =() => {
     //
     userButton.preventDefault();
     
-        // ENTER a basıldı    
-        if(userButton.keyCode==13){
+        // ENTER a basıldı 
+       // if(userButton.ctrlKey){} //ctrl basılarak mı tıklanmış
+
+        
+        if(userButton.keyCode==13){ // her karakterin sayısı var ! enter için 13 
            // alert("ENTER a bastınız.")
             console.log("ENTER a bastınız.");
             }
